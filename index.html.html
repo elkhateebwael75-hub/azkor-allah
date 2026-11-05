@@ -3,1980 +3,1760 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRUST — رقم واحد في مصر | صيانة الثلاجات والغسالات والبوتاجازات</title>
-<meta name="description" content="TRUST لصيانة الأجهزة المنزلية في الإسكندرية. صيانة ثلاجات، غسالات، وبوتاجازات. قبل ما تحتار، كلم TRUST وخد القرار. 01156661812 - 01124997077">
-<meta name="keywords" content="صيانة ثلاجات, صيانة غسالات, صيانة بوتاجازات, الإسكندرية, TRUST">
-<meta property="og:title" content="TRUST — رقم واحد في مصر">
-<meta property="og:description" content="قبل ما تحتار، كلم TRUST وخد القرار">
-<meta property="og:type" content="website">
+<meta name="description" content="هايبر اذكر الله — حلم العمر. مشروع كيان تجاري متكامل يبدأ من الإسكندرية ويتوسع في محافظات مصر بإذن الله.">
+<title>هايبر اذكر الله — حلم العمر</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "TRUST",
-  "description": "صيانة الأجهزة المنزلية - ثلاجات وغسالات وبوتاجازات",
-  "telephone": ["+201156661812", "+201124997077"],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "27 شارع محمد نجيب، سيدي بشر",
-    "addressLocality": "الإسكندرية",
-    "addressCountry": "EG"
-  }
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>
-/* ============================================
-   إعدادات الألوان والخطوط العامة
-   ============================================ */
+/* ============================================================
+   1) المتغيرات والأساسيات
+   ============================================================ */
 :root{
-  --navy:#1c3a5e;
-  --navy-dark:#132a44;
-  --teal:#0f9b8e;
-  --teal-dark:#0b7c72;
-  --gold:#e0b23a;
-  --red:#d32f2f;
-  --cream:#f7f3ec;
-  --gray-light:#eef1f4;
-  --gray-mid:#5b6b7a;
-  --text:#1f2d3d;
+  --green-900:#0b3d2e;
+  --green-800:#0f4d3a;
+  --green-700:#14624a;
+  --green-600:#1b7a5c;
+  --green-500:#22996f;
+  --gold-600:#b8860b;
+  --gold-500:#c9a227;
+  --gold-400:#e0b84a;
+  --gold-300:#f0d27a;
+  --cream:#faf7ef;
+  --cream-2:#f3efe2;
+  --ink-900:#1a1f1c;
+  --ink-700:#3a423d;
+  --ink-500:#6b756f;
+  --line:#e3ddcc;
   --white:#ffffff;
-  --shadow-sm:0 2px 8px rgba(20,40,70,.08);
-  --shadow-md:0 6px 24px rgba(20,40,70,.12);
-  --radius:14px;
-  --radius-lg:20px;
-  --transition:.25s ease;
+  --shadow-sm:0 2px 8px rgba(11,61,46,.08);
+  --shadow-md:0 8px 28px rgba(11,61,46,.12);
+  --shadow-lg:0 20px 50px rgba(11,61,46,.18);
+  --radius:18px;
+  --radius-sm:12px;
+  --font-body:'Cairo',system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-display:'Cairo',system-ui,sans-serif;
+  --font-arabic:'Amiri',serif;
+  --container:1200px;
+  --header-h:74px;
+  --share-price:20000; /* ← قيمة السهم قابلة للتعديل من هنا فقط */
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 10px)}
 body{
-  font-family:'Cairo','Tajawal',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-family:var(--font-body);
   background:var(--cream);
-  color:var(--text);
-  line-height:1.7;
+  color:var(--ink-900);
+  line-height:1.75;
   font-size:17px;
   overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
-img{max-width:100%;display:block;height:auto;}
-a{color:var(--teal-dark);text-decoration:none;}
-button{font-family:inherit;cursor:pointer;border:none;background:none;}
-h1,h2,h3,h4{color:var(--navy);line-height:1.3;font-weight:900;}
-h1{font-size:2rem;}
-h2{font-size:1.6rem;}
-h3{font-size:1.25rem;}
-p{margin-bottom:.6rem;}
-.container{max-width:1200px;margin:0 auto;padding:0 16px;}
-.section{padding:56px 0;}
-.section-title{
-  text-align:center;
-  font-size:1.8rem;
-  margin-bottom:12px;
-  position:relative;
-}
-.section-title::after{
-  content:"";
-  display:block;
-  width:70px;height:4px;
-  background:linear-gradient(90deg,var(--teal),var(--gold));
-  margin:14px auto 0;
-  border-radius:2px;
-}
-.section-sub{
-  text-align:center;
-  color:var(--gray-mid);
-  max-width:680px;
-  margin:0 auto 36px;
-  font-size:1.05rem;
-}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.container{width:min(100% - 40px,var(--container));margin-inline:auto}
+.section{padding:90px 0}
+.section--tint{background:var(--cream-2)}
+.section--dark{background:var(--green-900);color:#e9f3ee}
+.section--dark h2,.section--dark h3,.section--dark p{color:#e9f3ee}
 
-/* ============================================
-   الأزرار
-   ============================================ */
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:14px 24px;
-  border-radius:10px;
-  font-size:1.05rem;
-  font-weight:700;
-  transition:var(--transition);
-  text-align:center;
-  min-height:52px;
-  line-height:1.2;
-}
-.btn-primary{background:var(--teal);color:#fff;box-shadow:var(--shadow-sm);}
-.btn-primary:hover,.btn-primary:focus{background:var(--teal-dark);transform:translateY(-2px);box-shadow:var(--shadow-md);}
-.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--navy);}
-.btn-outline:hover,.btn-outline:focus{background:var(--navy);color:#fff;}
-.btn-gold{background:var(--gold);color:var(--navy-dark);}
-.btn-gold:hover,.btn-gold:focus{background:#c99a1f;}
-.btn-red{background:var(--red);color:#fff;}
-.btn-red:hover,.btn-red:focus{background:#a82424;}
-.btn-wa{background:#25D366;color:#fff;}
-.btn-wa:hover,.btn-wa:focus{background:#1da851;}
-.btn-lg{font-size:1.15rem;padding:16px 32px;min-height:58px;}
-.btn-block{display:flex;width:100%;}
-
-/* ============================================
-   رأس الموقع
-   ============================================ */
-header.site-header{
-  position:sticky;top:0;z-index:100;
-  background:var(--white);
-  box-shadow:var(--shadow-sm);
-  border-bottom:1px solid rgba(20,40,70,.06);
-}
-.top-bar{
-  background:var(--navy);
-  color:#fff;
-  font-size:.9rem;
-  padding:6px 0;
-  text-align:center;
-}
-.top-bar strong{color:var(--gold);}
-.header-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-  padding:12px 16px;
-  max-width:1200px;
-  margin:0 auto;
-}
-.logo-wrap{display:flex;align-items:center;gap:12px;flex-shrink:0;}
-.logo-svg{width:130px;height:auto;}
-.logo-tagline{
-  display:flex;flex-direction:column;
-  line-height:1.15;
-  font-size:.75rem;
-  color:var(--navy);
-  font-weight:700;
-}
-.logo-tagline .num1{color:var(--red);font-size:.85rem;}
-.logo-tagline .sub{color:var(--gray-mid);font-size:.7rem;font-weight:400;}
-
-nav.main-nav{display:flex;align-items:center;gap:4px;}
-nav.main-nav a{
-  color:var(--navy);
-  font-weight:700;
-  padding:10px 14px;
-  border-radius:8px;
-  font-size:1rem;
-  transition:var(--transition);
-}
-nav.main-nav a:hover,nav.main-nav a.active{background:var(--gray-light);color:var(--teal-dark);}
-.header-phones{display:flex;gap:8px;align-items:center;flex-shrink:0;}
-.header-phones a{
-  font-weight:700;
-  color:var(--navy);
-  font-size:.95rem;
-  padding:8px 10px;
-  border-radius:8px;
-  border:1px solid var(--gray-light);
-  white-space:nowrap;
-  direction:ltr;
-}
-.header-phones a:hover{background:var(--gray-light);}
-.header-phones a .ico{margin-inline-end:4px;}
-
-.menu-toggle{
-  display:none;
-  font-size:1.8rem;
-  color:var(--navy);
-  width:48px;height:48px;
-  border-radius:10px;
-  background:var(--gray-light);
-  align-items:center;justify-content:center;
-}
-
-/* ============================================
-   الصفحات/الواجهات (Routing)
-   ============================================ */
-.page{display:none;animation:fadeIn .35s ease;}
-.page.active{display:block;}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
-
-/* ============================================
-   Hero
-   ============================================ */
-.hero{
-  background:linear-gradient(135deg,#1c3a5e 0%,#14304f 60%,#0f2a45 100%);
-  color:#fff;
-  padding:56px 0 64px;
-  position:relative;
-  overflow:hidden;
-}
-.hero::before{
-  content:"";
-  position:absolute;inset:0;
-  background:radial-gradient(circle at 85% 20%,rgba(224,178,58,.12),transparent 55%);
-  pointer-events:none;
-}
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.15fr 1fr;
-  gap:40px;
-  align-items:center;
-  position:relative;
-  z-index:1;
-}
-.hero-badge{
+/* عناوين */
+.eyebrow{
   display:inline-flex;align-items:center;gap:8px;
-  background:rgba(224,178,58,.18);
-  color:var(--gold);
-  border:1px solid rgba(224,178,58,.35);
-  padding:6px 14px;
-  border-radius:50px;
-  font-size:.9rem;
-  font-weight:700;
-  margin-bottom:16px;
+  font-size:14px;font-weight:700;letter-spacing:.5px;
+  color:var(--gold-600);
+  background:rgba(201,162,39,.12);
+  padding:7px 16px;border-radius:999px;margin-bottom:16px;
+}
+.section-head{max-width:820px;margin:0 auto 54px;text-align:center}
+.section-head h2{
+  font-family:var(--font-display);font-size:clamp(26px,4vw,40px);
+  font-weight:800;line-height:1.35;color:var(--green-900);
+  letter-spacing:-.3px;
+}
+.section--dark .section-head h2{color:#fff}
+.section-head p{margin-top:14px;color:var(--ink-700);font-size:17px}
+.section--dark .section-head p{color:#c9ddd4}
+.section-head .accent{color:var(--gold-500)}
+
+/* أزرار */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px 30px;border-radius:999px;font-weight:800;font-size:16px;
+  transition:transform .2s,box-shadow .25s,background .25s,color .25s;
+  will-change:transform;white-space:nowrap;
+}
+.btn i{font-size:15px}
+.btn--gold{background:linear-gradient(135deg,var(--gold-500),var(--gold-600));color:#fff;box-shadow:0 10px 24px rgba(184,134,11,.32)}
+.btn--gold:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(184,134,11,.42)}
+.btn--ghost{background:rgba(255,255,255,.12);color:#fff;border:1.6px solid rgba(255,255,255,.55);backdrop-filter:blur(6px)}
+.btn--ghost:hover{background:rgba(255,255,255,.22);transform:translateY(-3px)}
+.btn--green{background:linear-gradient(135deg,var(--green-700),var(--green-600));color:#fff;box-shadow:0 10px 24px rgba(15,77,58,.28)}
+.btn--green:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(15,77,58,.38)}
+.btn--wa{background:#25d366;color:#fff;box-shadow:0 10px 24px rgba(37,211,102,.35)}
+.btn--wa:hover{background:#1ebe5b;transform:translateY(-3px)}
+.btn--block{width:100%}
+.btn:active{transform:translateY(0)}
+
+/* ============================================================
+   2) الشريط العلوي
+   ============================================================ */
+.topbar{
+  background:var(--green-900);color:#d8e9e1;font-size:13.5px;
+  padding:7px 0;text-align:center;letter-spacing:.2px;
+  position:relative;z-index:60;
+}
+.topbar .marquee{overflow:hidden;white-space:nowrap;max-width:100%}
+.topbar .marquee-track{display:inline-block;padding-left:100%;animation:marquee 22s linear infinite}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
+@media (prefers-reduced-motion:reduce){.topbar .marquee-track{animation:none;padding-left:0;display:block;white-space:normal}}
+
+/* الهيدر */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,247,239,.86);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:box-shadow .3s,border-color .3s,background .3s;
+}
+.header.scrolled{box-shadow:var(--shadow-sm);border-color:var(--line);background:rgba(250,247,239,.96)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{
+  width:46px;height:46px;border-radius:14px;flex-shrink:0;
+  background:linear-gradient(135deg,var(--green-800),var(--green-600));
+  display:grid;place-items:center;color:var(--gold-300);
+  box-shadow:var(--shadow-sm);font-size:20px;
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-text strong{font-size:18px;font-weight:800;color:var(--green-900)}
+.brand-text span{font-size:12.5px;color:var(--gold-600);font-weight:700;letter-spacing:.5px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:15.5px;font-weight:600;color:var(--ink-700);transition:color .2s;position:relative}
+.nav a:hover{color:var(--green-700)}
+.nav a::after{content:"";position:absolute;bottom:-6px;right:0;width:0;height:2px;background:var(--gold-500);transition:width .25s}
+.nav a:hover::after{width:100%}
+.header-cta{display:flex;align-items:center;gap:10px}
+.header-cta .btn{padding:11px 22px;font-size:14.5px}
+.burger{display:none;font-size:22px;color:var(--green-900);padding:8px;border-radius:10px}
+.burger:hover{background:var(--cream-2)}
+
+/* قائمة الموبايل */
+.mobile-menu{
+  position:fixed;inset:0;z-index:80;background:var(--green-900);color:#fff;
+  transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);
+  display:flex;flex-direction:column;padding:24px;
+}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.mobile-menu-head .brand-text strong,.mobile-menu-head .brand-text span{color:#fff}
+.mobile-menu-head .brand-text span{color:var(--gold-300)}
+.mobile-menu a{display:block;padding:15px 0;font-size:18px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.12);color:#e9f3ee}
+.mobile-menu a:hover{color:var(--gold-300)}
+.mobile-menu .btn{margin-top:22px}
+.close-menu{font-size:26px;color:#fff;padding:6px}
+
+/* ============================================================
+   3) الواجهة الرئيسية (Hero)
+   ============================================================ */
+.hero{position:relative;min-height:calc(100vh - var(--header-h) - 34px);display:flex;align-items:center;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(11,61,46,.55) 0%,rgba(11,61,46,.78) 55%,rgba(11,61,46,.94) 100%);
+}
+.hero-inner{padding:70px 0;max-width:760px;color:#fff}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(201,162,39,.2);border:1px solid rgba(224,184,74,.5);
+  color:var(--gold-300);padding:8px 18px;border-radius:999px;
+  font-size:14px;font-weight:700;margin-bottom:24px;
+  backdrop-filter:blur(6px);
 }
 .hero h1{
-  color:#fff;
-  font-size:2.4rem;
-  margin-bottom:16px;
-  line-height:1.25;
+  font-family:var(--font-display);font-size:clamp(46px,9vw,96px);
+  font-weight:900;line-height:1.05;letter-spacing:-1.5px;margin-bottom:8px;
+  color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.35);
 }
-.hero h1 .accent{color:var(--gold);}
-.hero-sub{
-  font-size:1.15rem;
-  color:rgba(255,255,255,.9);
-  margin-bottom:22px;
+.hero h1 .gold{color:var(--gold-400)}
+.hero .project-name{
+  font-size:clamp(22px,3.4vw,34px);font-weight:800;
+  color:var(--gold-300);margin-bottom:22px;letter-spacing:-.3px;
 }
-.hero-phones{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-bottom:24px;
+.hero .lead{
+  font-size:clamp(16px,2vw,19px);line-height:1.9;color:#e4efe9;
+  max-width:640px;margin-bottom:34px;text-shadow:0 1px 6px rgba(0,0,0,.25);
 }
-.hero-phone{
-  display:flex;align-items:center;gap:8px;
-  background:rgba(255,255,255,.1);
-  border:1px solid rgba(255,255,255,.25);
-  color:#fff;
-  padding:10px 18px;
-  border-radius:12px;
-  font-weight:700;
-  font-size:1.1rem;
-  direction:ltr;
-  transition:var(--transition);
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-scroll{
+  position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
+  color:rgba(255,255,255,.75);font-size:22px;animation:bob 2.2s ease-in-out infinite;
 }
-.hero-phone:hover{background:rgba(255,255,255,.2);}
-.hero-phone .ico{font-size:1.2rem;}
-.hero-cta{display:flex;gap:12px;flex-wrap:wrap;}
-.hero-cta .btn-outline{color:#fff;border-color:rgba(255,255,255,.6);}
-.hero-cta .btn-outline:hover{background:#fff;color:var(--navy);}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+@media (prefers-reduced-motion:reduce){.hero-scroll{animation:none}}
 
-.hero-visual{
-  display:flex;justify-content:center;
+/* شريط الثقة */
+.trust-strip{background:var(--green-900);border-top:1px solid rgba(255,255,255,.08)}
+.trust-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust-item{padding:22px 16px;text-align:center;border-left:1px solid rgba(255,255,255,.1);color:#d8e9e1}
+.trust-item:first-child{border-left:none}
+.trust-item i{color:var(--gold-400);font-size:20px;margin-bottom:8px;display:block}
+.trust-item strong{display:block;font-size:15.5px;font-weight:800;color:#fff}
+.trust-item span{font-size:13px;color:#a9c6ba}
+
+/* ============================================================
+   4) قسم: ما هو المشروع؟
+   ============================================================ */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.about-copy .eyebrow{margin-bottom:14px}
+.about-copy h2{
+  font-family:var(--font-display);font-size:clamp(26px,3.6vw,38px);
+  font-weight:800;line-height:1.4;color:var(--green-900);margin-bottom:20px;letter-spacing:-.3px;
+}
+.about-copy h2 .accent{color:var(--gold-600)}
+.about-copy p{color:var(--ink-700);margin-bottom:16px;font-size:17px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.pillar{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:18px;box-shadow:var(--shadow-sm);transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold-400)}
+.pillar i{
+  width:42px;height:42px;flex-shrink:0;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(20,98,74,.12),rgba(201,162,39,.14));
+  color:var(--green-700);font-size:17px;
+}
+.pillar strong{display:block;font-size:15.5px;font-weight:800;color:var(--green-900);margin-bottom:3px}
+.pillar span{font-size:13.5px;color:var(--ink-500);line-height:1.6}
+.about-visual{position:relative}
+.about-visual img{
+  border-radius:var(--radius);box-shadow:var(--shadow-lg);
+  aspect-ratio:4/3;object-fit:cover;width:100%;
+}
+.about-visual::before{
+  content:"";position:absolute;inset:-16px -16px auto auto;width:120px;height:120px;
+  border-radius:50%;background:radial-gradient(circle,rgba(201,162,39,.25),transparent 70%);
+  z-index:-1;
+}
+.about-badge{
+  position:absolute;bottom:-22px;right:22px;
+  background:var(--green-800);color:#fff;border-radius:var(--radius-sm);
+  padding:16px 22px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:12px;
+  border:1px solid rgba(201,162,39,.4);
+}
+.about-badge i{color:var(--gold-400);font-size:22px}
+.about-badge strong{display:block;font-size:15px;font-weight:800}
+.about-badge span{font-size:12.5px;color:#b9d4c8}
+
+/* ============================================================
+   5) خريطة الرحلة / المراحل
+   ============================================================ */
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.phase{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:32px 26px;box-shadow:var(--shadow-sm);position:relative;
+  transition:transform .3s,box-shadow .3s;
+  display:flex;flex-direction:column;
+}
+.phase:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.phase-num{
+  width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;margin-bottom:18px;
+  background:linear-gradient(135deg,var(--green-700),var(--green-500));
+  box-shadow:0 8px 18px rgba(20,98,74,.3);
+}
+.phase:nth-child(2) .phase-num{background:linear-gradient(135deg,var(--gold-600),var(--gold-400));box-shadow:0 8px 18px rgba(201,162,39,.35)}
+.phase:nth-child(3) .phase-num{background:linear-gradient(135deg,var(--green-900),var(--green-700));box-shadow:0 8px 18px rgba(11,61,46,.35)}
+.phase h3{font-size:20px;font-weight:800;color:var(--green-900);margin-bottom:6px}
+.phase .phase-tag{font-size:13px;color:var(--gold-600);font-weight:700;margin-bottom:16px}
+.phase ul{display:flex;flex-direction:column;gap:10px;margin-top:auto}
+.phase li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink-700)}
+.phase li i{color:var(--green-600);font-size:13px;margin-top:5px}
+.phases-note{
+  max-width:820px;margin:36px auto 0;text-align:center;font-size:14px;
+  color:var(--ink-500);background:var(--white);border:1px dashed var(--line);
+  padding:16px 22px;border-radius:var(--radius-sm);
+}
+
+/* ============================================================
+   6) الهيكل التنظيمي
+   ============================================================ */
+.org{display:flex;flex-direction:column;align-items:center;gap:0}
+.org-root{
+  background:linear-gradient(135deg,var(--green-900),var(--green-700));
+  color:#fff;padding:22px 34px;border-radius:var(--radius);
+  text-align:center;box-shadow:var(--shadow-md);
+  border:1px solid rgba(201,162,39,.4);position:relative;z-index:2;
+}
+.org-root strong{display:block;font-size:19px;font-weight:800;letter-spacing:-.2px}
+.org-root span{font-size:13.5px;color:var(--gold-300);font-weight:700}
+.org-connector{width:2px;height:34px;background:var(--gold-400)}
+.org-branches{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;width:100%;margin-top:0;
   position:relative;
 }
-.hero-visual img{
-  border-radius:var(--radius-lg);
-  box-shadow:0 20px 50px rgba(0,0,0,.35);
-  max-height:420px;
-  object-fit:cover;
-  width:100%;
+.org-branches::before{
+  content:"";position:absolute;top:-18px;right:calc(16.66% - 1px);left:calc(16.66% - 1px);
+  height:2px;background:var(--gold-400);
 }
+.org-branch{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;text-align:center;box-shadow:var(--shadow-sm);
+  position:relative;transition:transform .25s,box-shadow .25s;
+}
+.org-branch::before{content:"";position:absolute;top:-18px;right:50%;transform:translateX(50%);width:2px;height:18px;background:var(--gold-400)}
+.org-branch:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.org-branch i{
+  width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin:0 auto 14px;
+  background:linear-gradient(135deg,var(--green-700),var(--green-500));color:#fff;font-size:21px;
+}
+.org-branch:nth-child(2) i{background:linear-gradient(135deg,var(--gold-600),var(--gold-400))}
+.org-branch strong{display:block;font-size:16px;font-weight:800;color:var(--green-900);margin-bottom:4px}
+.org-branch span{font-size:13.5px;color:var(--ink-500)}
+.org-regions{
+  margin-top:26px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px;width:100%;box-shadow:var(--shadow-sm);
+}
+.org-regions-head{text-align:center;margin-bottom:20px}
+.org-regions-head strong{font-size:17px;font-weight:800;color:var(--green-900)}
+.org-regions-head span{display:block;font-size:13.5px;color:var(--ink-500);margin-top:4px}
+.region-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.chip{
+  padding:9px 18px;border-radius:999px;background:var(--cream-2);
+  border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--ink-700);
+  cursor:pointer;transition:all .2s;position:relative;
+}
+.chip:hover,.chip.active{background:var(--green-700);color:#fff;border-color:var(--green-700);transform:translateY(-2px);box-shadow:0 6px 14px rgba(20,98,74,.25)}
+.region-detail{
+  margin-top:18px;padding:16px 20px;border-radius:var(--radius-sm);
+  background:rgba(20,98,74,.06);border:1px dashed var(--green-600);
+  font-size:14.5px;color:var(--green-800);text-align:center;min-height:54px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+}
+.region-detail i{color:var(--gold-600)}
+.org-note{max-width:820px;margin:22px auto 0;text-align:center;font-size:13.5px;color:var(--ink-500)}
 
-/* ============================================
-   بطاقات الخدمات
-   ============================================ */
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-  margin-top:12px;
+/* ============================================================
+   7) كيف يعمل الكيان
+   ============================================================ */
+.ops-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.op-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 28px;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s;
 }
-.service-card{
-  background:#fff;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-sm);
-  display:flex;flex-direction:column;
-  transition:var(--transition);
-  border:1px solid rgba(20,40,70,.05);
+.op-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.op-icon{
+  width:58px;height:58px;border-radius:16px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--green-700),var(--green-500));color:#fff;
+  font-size:24px;margin-bottom:20px;box-shadow:0 8px 18px rgba(20,98,74,.25);
 }
-.service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);}
-.service-card img{
-  width:100%;height:220px;object-fit:cover;
+.op-card:nth-child(2) .op-icon{background:linear-gradient(135deg,var(--gold-600),var(--gold-400));box-shadow:0 8px 18px rgba(201,162,39,.3)}
+.op-card:nth-child(3) .op-icon{background:linear-gradient(135deg,var(--green-900),var(--green-700))}
+.op-card h3{font-size:20px;font-weight:800;color:var(--green-900);margin-bottom:8px}
+.op-card .op-sub{font-size:13.5px;color:var(--gold-600);font-weight:700;margin-bottom:16px}
+.op-card ul{display:flex;flex-direction:column;gap:10px}
+.op-card li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--ink-700)}
+.op-card li i{color:var(--green-600);font-size:13px;margin-top:5px}
+.ops-motto{
+  margin-top:38px;text-align:center;font-size:clamp(18px,2.6vw,24px);font-weight:800;
+  color:var(--green-900);background:linear-gradient(135deg,rgba(201,162,39,.1),rgba(20,98,74,.08));
+  padding:26px;border-radius:var(--radius);border:1px solid rgba(201,162,39,.3);
 }
-.service-card-body{padding:20px;display:flex;flex-direction:column;flex:1;}
-.service-card h3{margin-bottom:10px;color:var(--navy);}
-.service-card p{color:var(--gray-mid);flex:1;margin-bottom:16px;}
-.service-card .btn{width:100%;}
+.ops-motto .accent{color:var(--gold-600)}
 
-/* ============================================
-   قبل / بعد
-   ============================================ */
-.ba-section{background:#fff;}
-.ba-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+/* ============================================================
+   8) تجربة العميل + معرض
+   ============================================================ */
+.exp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:44px}
+.exp-item{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:22px 18px;text-align:center;box-shadow:var(--shadow-sm);
+  transition:transform .25s,box-shadow .25s,border-color .25s;
 }
-.ba-card{
-  background:var(--cream);
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-sm);
-  border:1px solid rgba(20,40,70,.06);
+.exp-item:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--gold-400)}
+.exp-item i{font-size:24px;color:var(--green-600);margin-bottom:10px;display:block}
+.exp-item strong{display:block;font-size:15px;font-weight:800;color:var(--green-900)}
+.exp-item span{font-size:12.5px;color:var(--ink-500)}
+.gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:14px;
 }
-.ba-card h3{
-  padding:16px 18px 8px;
-  font-size:1.15rem;
-  color:var(--navy);
+.gallery figure{
+  position:relative;border-radius:var(--radius-sm);overflow:hidden;
+  box-shadow:var(--shadow-sm);cursor:zoom-in;background:var(--cream-2);
 }
-.ba-compare{
-  display:grid;
-  grid-template-columns:1fr auto 1fr;
-  align-items:center;
-  gap:8px;
-  padding:8px 14px;
+.gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.07)}
+.gallery figure figcaption{
+  position:absolute;inset:auto 0 0 0;padding:14px 16px 12px;
+  background:linear-gradient(180deg,transparent,rgba(11,61,46,.85));
+  color:#fff;font-size:13.5px;font-weight:700;opacity:0;transform:translateY(8px);
+  transition:opacity .3s,transform .3s;
 }
-.ba-img{position:relative;border-radius:12px;overflow:hidden;}
-.ba-img img{width:100%;height:150px;object-fit:cover;}
-.ba-label{
-  position:absolute;top:8px;right:8px;
-  background:rgba(28,58,94,.85);
-  color:#fff;
-  font-size:.75rem;
-  font-weight:700;
-  padding:3px 10px;
-  border-radius:20px;
+.gallery figure:hover figcaption{opacity:1;transform:translateY(0)}
+.gallery .g-wide{grid-column:span 2}
+.gallery .g-tall{grid-row:span 2}
+.exp-claim{
+  margin-top:34px;text-align:center;font-size:clamp(16px,2.2vw,20px);font-weight:700;
+  color:var(--green-800);max-width:760px;margin-inline:auto;
 }
-.ba-label.after{background:var(--teal);}
-.ba-arrow{
-  font-size:1.6rem;
-  color:var(--teal);
-  font-weight:900;
-}
-.ba-desc{padding:8px 18px 18px;color:var(--gray-mid);font-size:.95rem;}
+.exp-claim .accent{color:var(--gold-600)}
 
-/* ============================================
-   خطوات
-   ============================================ */
-.steps-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:120;background:rgba(11,61,46,.94);
+  display:none;align-items:center;justify-content:center;padding:24px;
 }
-.step-card{
-  background:#fff;
-  padding:28px 22px;
-  border-radius:var(--radius-lg);
-  box-shadow:var(--shadow-sm);
-  text-align:center;
-  border-top:4px solid var(--teal);
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:var(--radius-sm);box-shadow:var(--shadow-lg)}
+.lightbox .lb-close{
+  position:absolute;top:22px;left:22px;font-size:30px;color:#fff;
+  width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);
+  display:grid;place-items:center;
 }
-.step-num{
-  display:inline-flex;
-  width:52px;height:52px;
-  align-items:center;justify-content:center;
-  background:linear-gradient(135deg,var(--teal),var(--teal-dark));
-  color:#fff;
-  border-radius:50%;
-  font-size:1.4rem;
-  font-weight:900;
-  margin-bottom:14px;
-}
-.step-card h3{margin-bottom:8px;}
-.step-card p{color:var(--gray-mid);font-size:.98rem;}
+.lightbox .lb-close:hover{background:rgba(255,255,255,.25)}
 
-/* ============================================
-   الأسئلة الشائعة
-   ============================================ */
-.faq-list{max-width:820px;margin:0 auto;}
+/* ============================================================
+   9) لماذا المشاركة
+   ============================================================ */
+.why-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.why-copy h2{font-family:var(--font-display);font-size:clamp(26px,3.6vw,38px);font-weight:800;color:#fff;line-height:1.4;margin-bottom:18px;letter-spacing:-.3px}
+.why-copy h2 .accent{color:var(--gold-400)}
+.why-copy p{color:#c9ddd4;margin-bottom:16px;font-size:16.5px}
+.why-quote{
+  background:rgba(255,255,255,.06);border-right:4px solid var(--gold-400);
+  padding:20px 24px;border-radius:var(--radius-sm);margin-top:22px;
+  font-size:16px;color:#e9f3ee;font-weight:600;line-height:1.8;
+}
+.why-quote .accent{color:var(--gold-300)}
+.why-list{display:flex;flex-direction:column;gap:14px}
+.why-item{
+  display:flex;gap:16px;align-items:flex-start;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--radius-sm);padding:20px 22px;
+  transition:background .25s,transform .25s,border-color .25s;
+}
+.why-item:hover{background:rgba(255,255,255,.1);transform:translateX(-4px);border-color:rgba(224,184,74,.5)}
+.why-item i{color:var(--gold-400);font-size:20px;margin-top:3px;flex-shrink:0}
+.why-item strong{display:block;font-size:16px;font-weight:800;color:#fff;margin-bottom:3px}
+.why-item span{font-size:14px;color:#b9d4c8;line-height:1.6}
+
+/* ============================================================
+   10) المشاركة المقترحة
+   ============================================================ */
+.share-card{
+  max-width:920px;margin:0 auto;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow-lg);overflow:hidden;
+}
+.share-head{
+  background:linear-gradient(135deg,var(--green-900),var(--green-700));
+  color:#fff;padding:34px 36px;text-align:center;position:relative;
+}
+.share-head::after{
+  content:"";position:absolute;bottom:0;right:0;left:0;height:4px;
+  background:linear-gradient(90deg,var(--gold-600),var(--gold-300),var(--gold-600));
+}
+.share-head h3{font-size:clamp(22px,3vw,30px);font-weight:800;margin-bottom:8px;letter-spacing:-.3px}
+.share-head .price-line{font-size:17px;color:var(--gold-300);font-weight:700}
+.share-head .price-line b{font-size:24px;color:#fff}
+.share-body{padding:34px 36px}
+.share-examples{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:26px}
+.share-ex{
+  background:var(--cream-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:16px 8px;text-align:center;transition:all .2s;
+}
+.share-ex:hover{background:rgba(201,162,39,.12);border-color:var(--gold-400);transform:translateY(-3px)}
+.share-ex .n{font-size:22px;font-weight:900;color:var(--green-800);line-height:1.1}
+.share-ex .v{font-size:13px;color:var(--ink-500);font-weight:600;margin-top:4px}
+.share-ex .v b{color:var(--gold-600)}
+.share-disclaimer{
+  background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.35);
+  border-radius:var(--radius-sm);padding:18px 22px;font-size:14.5px;color:var(--ink-700);
+  display:flex;gap:12px;align-items:flex-start;
+}
+.share-disclaimer i{color:var(--gold-600);font-size:18px;margin-top:2px;flex-shrink:0}
+.share-disclaimer strong{color:var(--green-900);display:block;margin-bottom:4px}
+
+/* ============================================================
+   11) نموذج التسجيل
+   ============================================================ */
+.reg-wrap{max-width:920px;margin:0 auto}
+.reg-card{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);overflow:hidden;
+}
+.reg-head{
+  background:linear-gradient(135deg,var(--green-800),var(--green-600));
+  color:#fff;padding:30px 34px;display:flex;align-items:center;gap:16px;
+}
+.reg-head i{
+  width:52px;height:52px;border-radius:14px;display:grid;place-items:center;
+  background:rgba(255,255,255,.15);font-size:22px;flex-shrink:0;
+}
+.reg-head h3{font-size:22px;font-weight:800;margin-bottom:4px}
+.reg-head p{font-size:14px;color:#d8e9e1}
+.reg-body{padding:34px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+.field label{font-size:14.5px;font-weight:700;color:var(--green-900)}
+.field label .req{color:#c0392b}
+.field input,.field select{
+  font-family:inherit;font-size:16px;padding:14px 16px;border-radius:var(--radius-sm);
+  border:1.6px solid var(--line);background:var(--cream);color:var(--ink-900);
+  transition:border-color .2s,box-shadow .2s,background .2s;width:100%;
+}
+.field input:focus,.field select:focus{
+  outline:none;border-color:var(--green-600);background:#fff;
+  box-shadow:0 0 0 4px rgba(20,98,74,.12);
+}
+.field input.error,.field select.error{border-color:#c0392b;background:#fdf2f0}
+.field .hint{font-size:12.5px;color:var(--ink-500)}
+.field .err-msg{font-size:12.5px;color:#c0392b;font-weight:700;display:none}
+.field .err-msg.show{display:block}
+.stock-picker{display:flex;flex-wrap:wrap;gap:10px}
+.stock-opt{
+  flex:1;min-width:72px;padding:14px 8px;border-radius:var(--radius-sm);
+  border:1.6px solid var(--line);background:var(--cream);text-align:center;
+  transition:all .2s;cursor:pointer;font-weight:800;color:var(--green-900);
+}
+.stock-opt:hover{border-color:var(--gold-400);background:rgba(201,162,39,.08)}
+.stock-opt.active{background:var(--green-700);color:#fff;border-color:var(--green-700);box-shadow:0 6px 16px rgba(20,98,74,.28)}
+.stock-opt .num{font-size:20px;display:block;line-height:1.1}
+.stock-opt .lbl{font-size:11.5px;font-weight:600;opacity:.85}
+.total-box{
+  grid-column:1/-1;background:linear-gradient(135deg,rgba(20,98,74,.08),rgba(201,162,39,.1));
+  border:1px solid rgba(201,162,39,.35);border-radius:var(--radius-sm);
+  padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.total-box .tl{font-size:14.5px;color:var(--ink-700);font-weight:600}
+.total-box .tl b{color:var(--green-900)}
+.total-box .tv{font-size:26px;font-weight:900;color:var(--green-800);letter-spacing:-.5px}
+.total-box .tv .cur{font-size:15px;font-weight:700;color:var(--ink-500)}
+.total-note{grid-column:1/-1;font-size:12.5px;color:var(--ink-500);margin-top:-6px}
+.consent{
+  grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;
+  background:var(--cream-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:18px 20px;font-size:14px;color:var(--ink-700);cursor:pointer;
+}
+.consent input{margin-top:4px;width:20px;height:20px;accent-color:var(--green-700);flex-shrink:0;cursor:pointer}
+.consent.error{border-color:#c0392b;background:#fdf2f0}
+.form-actions{grid-column:1/-1;display:flex;flex-direction:column;gap:12px;margin-top:4px}
+.form-actions .btn{font-size:17px;padding:17px 30px}
+.form-note{font-size:12.5px;color:var(--ink-500);text-align:center;line-height:1.7}
+.form-note i{color:var(--gold-600)}
+
+/* رسالة بعد التسجيل */
+.success-box{
+  display:none;text-align:center;padding:20px 8px 8px;
+}
+.success-box.show{display:block;animation:fadeUp .5s ease}
+.success-icon{
+  width:84px;height:84px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--green-700),var(--green-500));color:#fff;font-size:38px;
+  box-shadow:0 12px 28px rgba(20,98,74,.35);animation:pop .5s ease;
+}
+@keyframes pop{0%{transform:scale(.5);opacity:0}100%{transform:scale(1);opacity:1}}
+.success-box h3{font-size:24px;font-weight:800;color:var(--green-900);margin-bottom:12px}
+.success-box p{font-size:15.5px;color:var(--ink-700);margin-bottom:12px;max-width:620px;margin-inline:auto}
+.success-box .wa-hint{
+  background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.4);
+  border-radius:var(--radius-sm);padding:16px 20px;color:#0b6b34;font-weight:700;
+  display:inline-flex;align-items:center;gap:10px;margin:14px 0 20px;font-size:15px;
+}
+.copy-area{
+  margin:20px auto 0;max-width:640px;text-align:right;
+}
+.copy-area textarea{
+  width:100%;min-height:190px;font-family:var(--font-body);font-size:13.5px;
+  padding:14px;border-radius:var(--radius-sm);border:1.6px solid var(--line);
+  background:var(--cream);color:var(--ink-700);resize:vertical;line-height:1.8;
+}
+.copy-area .btn{margin-top:10px}
+.copy-feedback{font-size:13px;font-weight:700;color:var(--green-700);margin-top:8px;display:none}
+.copy-feedback.show{display:block}
+
+/* ============================================================
+   12) الشفافية القانونية
+   ============================================================ */
+.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.legal-copy h2{font-family:var(--font-display);font-size:clamp(26px,3.6vw,38px);font-weight:800;color:var(--green-900);line-height:1.4;margin-bottom:18px;letter-spacing:-.3px}
+.legal-copy h2 .accent{color:var(--gold-600)}
+.legal-copy p{color:var(--ink-700);margin-bottom:14px;font-size:16px}
+.legal-card{
+  background:var(--green-900);color:#e9f3ee;border-radius:var(--radius);
+  padding:34px;box-shadow:var(--shadow-md);border:1px solid rgba(201,162,39,.3);
+}
+.legal-card h3{color:#fff;font-size:19px;font-weight:800;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.legal-card h3 i{color:var(--gold-400)}
+.legal-list{display:flex;flex-direction:column;gap:14px}
+.legal-list li{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:#c9ddd4}
+.legal-list li i{color:var(--gold-400);font-size:14px;margin-top:5px;flex-shrink:0}
+.legal-warn{
+  margin-top:22px;padding:16px 18px;border-radius:var(--radius-sm);
+  background:rgba(201,162,39,.15);border:1px solid rgba(224,184,74,.4);
+  font-size:13.5px;color:#f0d27a;font-weight:600;display:flex;gap:10px;align-items:flex-start;
+}
+.legal-warn i{margin-top:3px;flex-shrink:0}
+
+/* ============================================================
+   13) الأسئلة الشائعة
+   ============================================================ */
+.faq{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
 .faq-item{
-  background:#fff;
-  border-radius:12px;
-  margin-bottom:10px;
-  box-shadow:var(--shadow-sm);
-  overflow:hidden;
-  border:1px solid rgba(20,40,70,.06);
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius-sm);
+  overflow:hidden;transition:border-color .25s,box-shadow .25s;
 }
+.faq-item.open{border-color:var(--gold-400);box-shadow:var(--shadow-sm)}
 .faq-q{
-  width:100%;
-  padding:16px 18px;
-  text-align:right;
-  font-weight:700;
-  color:var(--navy);
-  font-size:1.05rem;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  transition:var(--transition);
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:20px 24px;font-size:16px;font-weight:800;color:var(--green-900);text-align:right;
+  transition:background .2s;
 }
-.faq-q:hover{background:var(--gray-light);}
-.faq-q .arrow{
-  color:var(--teal);
-  font-size:1.3rem;
-  transition:transform .25s ease;
-  flex-shrink:0;
-}
-.faq-item.open .faq-q .arrow{transform:rotate(180deg);}
+.faq-q:hover{background:var(--cream-2)}
+.faq-q i{color:var(--gold-600);font-size:16px;transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
 .faq-a{
-  max-height:0;
-  overflow:hidden;
-  transition:max-height .3s ease,padding .3s ease;
-  padding:0 18px;
-  color:var(--gray-mid);
+  max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;
+  padding:0 24px;font-size:15px;color:var(--ink-700);line-height:1.8;
 }
-.faq-item.open .faq-a{max-height:400px;padding:0 18px 18px;}
+.faq-item.open .faq-a{max-height:400px;padding:0 24px 22px}
 
-/* ============================================
-   نموذج طلب الصيانة
-   ============================================ */
-.form-section{
-  background:linear-gradient(180deg,#fff 0%,var(--cream) 100%);
+/* ============================================================
+   14) التواصل
+   ============================================================ */
+.contact-wrap{
+  max-width:820px;margin:0 auto;background:var(--white);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow-md);overflow:hidden;
+  display:grid;grid-template-columns:1fr 1.3fr;
 }
-.form-wrap{
-  max-width:900px;
-  margin:0 auto;
-  background:#fff;
-  padding:32px;
-  border-radius:var(--radius-lg);
-  box-shadow:var(--shadow-md);
-  border:1px solid rgba(20,40,70,.07);
+.contact-visual{
+  background:linear-gradient(135deg,var(--green-900),var(--green-700));
+  padding:34px;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;color:#fff;gap:14px;
 }
-.form-wrap h3{
-  color:var(--navy);
-  margin-bottom:6px;
-  font-size:1.5rem;
-  text-align:center;
+.contact-visual .avatar{
+  width:110px;height:110px;border-radius:50%;overflow:hidden;
+  border:3px solid var(--gold-400);box-shadow:var(--shadow-md);
 }
-.form-wrap .hint{
-  text-align:center;
-  color:var(--gray-mid);
-  margin-bottom:24px;
-  font-size:.98rem;
+.contact-visual .avatar img{width:100%;height:100%;object-fit:cover}
+.contact-visual strong{font-size:20px;font-weight:800}
+.contact-visual span{font-size:13.5px;color:var(--gold-300);font-weight:700}
+.contact-visual .role{font-size:13px;color:#b9d4c8}
+.contact-body{padding:34px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.contact-body h3{font-size:20px;font-weight:800;color:var(--green-900)}
+.contact-body p{font-size:15px;color:var(--ink-700)}
+.contact-body .wa-line{
+  display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;color:var(--green-800);
+  direction:ltr;justify-content:flex-end;
 }
-fieldset{
-  border:none;
-  margin-bottom:24px;
-  padding:0;
-}
-fieldset legend{
-  font-weight:900;
-  color:var(--navy);
-  font-size:1.1rem;
-  padding:8px 0 4px;
-  margin-bottom:6px;
-  border-bottom:2px solid var(--gray-light);
-  width:100%;
-  display:block;
-}
-.form-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-}
-.field{display:flex;flex-direction:column;}
-.field.full{grid-column:1/-1;}
-.field label{
-  font-weight:700;
-  color:var(--navy);
-  font-size:.98rem;
-  margin-bottom:6px;
-}
-.field label .req{color:var(--red);}
-.field input,.field select,.field textarea{
-  padding:13px 14px;
-  border:2px solid #d6dde4;
-  border-radius:10px;
-  font-size:1rem;
-  font-family:inherit;
-  background:#fff;
-  color:var(--text);
-  transition:var(--transition);
-  width:100%;
-}
-.field input:focus,.field select:focus,.field textarea:focus{
-  outline:none;
-  border-color:var(--teal);
-  box-shadow:0 0 0 3px rgba(15,155,142,.12);
-}
-.field textarea{resize:vertical;min-height:100px;}
-.field .err{
-  color:var(--red);
-  font-size:.85rem;
-  margin-top:4px;
-  display:none;
-  font-weight:700;
-}
-.field.invalid input,.field.invalid select,.field.invalid textarea{
-  border-color:var(--red);
-  background:#fff5f5;
-}
-.field.invalid .err{display:block;}
-.field .help{color:var(--gray-mid);font-size:.82rem;margin-top:3px;}
+.contact-body .wa-line i{color:#25d366;font-size:20px}
 
-.form-actions{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px;
-  margin-top:16px;
+/* ============================================================
+   15) الأذكار
+   ============================================================ */
+.dhikr-band{
+  background:linear-gradient(135deg,var(--green-900),var(--green-800));
+  color:#fff;padding:44px 0;text-align:center;position:relative;overflow:hidden;
 }
-.form-note{
-  text-align:center;
-  color:var(--gray-mid);
-  font-size:.9rem;
-  margin-top:16px;
-  padding:12px;
-  background:var(--gray-light);
-  border-radius:10px;
-  line-height:1.6;
+.dhikr-band::before{
+  content:"";position:absolute;inset:0;opacity:.06;
+  background-image:radial-gradient(circle at 20% 30%,#f0d27a 0,transparent 40%),
+                   radial-gradient(circle at 80% 70%,#f0d27a 0,transparent 40%);
 }
-.summary-box{
-  margin-top:20px;
-  padding:18px;
-  background:#f0f8f7;
-  border:2px dashed var(--teal);
-  border-radius:12px;
-  display:none;
+.dhikr-band .dhikr-label{font-size:13px;color:var(--gold-300);font-weight:700;letter-spacing:1px;margin-bottom:14px}
+.dhikr-text{
+  font-family:var(--font-arabic);font-size:clamp(24px,4vw,38px);font-weight:700;
+  color:#fff;transition:opacity .6s ease;line-height:1.6;min-height:1.6em;
 }
-.summary-box.show{display:block;}
-.summary-box h4{color:var(--navy);margin-bottom:10px;font-size:1.1rem;}
-.summary-box pre{
-  white-space:pre-wrap;
-  word-break:break-word;
-  font-family:inherit;
-  font-size:.95rem;
-  color:var(--text);
-  line-height:1.7;
-  margin-bottom:14px;
-  background:#fff;
-  padding:12px;
-  border-radius:8px;
-  max-height:320px;
-  overflow:auto;
-}
-.summary-actions{display:flex;gap:10px;flex-wrap:wrap;}
-.toast{
-  position:fixed;
-  bottom:24px;left:50%;
-  transform:translateX(-50%) translateY(120px);
-  background:var(--navy);
-  color:#fff;
-  padding:14px 24px;
-  border-radius:10px;
-  font-weight:700;
-  z-index:9999;
-  transition:transform .3s ease;
-  box-shadow:var(--shadow-md);
-  max-width:90vw;
-  text-align:center;
-}
-.toast.show{transform:translateX(-50%) translateY(0);}
-.toast.success{background:var(--teal-dark);}
-.toast.error{background:var(--red);}
+.dhikr-dots{display:flex;gap:8px;justify-content:center;margin-top:20px}
+.dhikr-dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.25);transition:background .3s}
+.dhikr-dots span.active{background:var(--gold-400)}
 
-/* ============================================
-   صفحات الخدمات (الثلاجات/الغسالات/البوتاجازات)
-   ============================================ */
-.service-hero{
-  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-dark) 100%);
-  color:#fff;
-  padding:44px 0;
+/* ============================================================
+   16) الفوتر
+   ============================================================ */
+.footer{background:#082b21;color:#c9ddd4;padding:64px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;padding-bottom:44px}
+.footer h4{color:#fff;font-size:16px;font-weight:800;margin-bottom:18px}
+.footer .brand-mark{margin-bottom:10px}
+.footer .brand-text strong{color:#fff}
+.footer .brand-text span{color:var(--gold-300)}
+.footer p{font-size:14px;line-height:1.8;color:#a9c6ba;margin-top:14px}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:14px;color:#c9ddd4;transition:color .2s,padding .2s}
+.footer-links a:hover{color:var(--gold-300);padding-right:4px}
+.footer-contact{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.footer-contact .wa{
+  display:inline-flex;align-items:center;gap:8px;direction:ltr;justify-content:flex-end;
+  color:#25d366;font-weight:800;font-size:16px;
 }
-.service-hero h1{color:#fff;font-size:2.1rem;margin-bottom:10px;}
-.service-hero p{color:rgba(255,255,255,.9);font-size:1.1rem;max-width:760px;}
-.breadcrumb{
-  font-size:.9rem;
-  color:rgba(255,255,255,.75);
-  margin-bottom:12px;
+.footer-note{
+  margin-top:16px;padding:14px 16px;border-radius:var(--radius-sm);
+  background:rgba(201,162,39,.1);border:1px solid rgba(201,162,39,.25);
+  font-size:12.5px;color:#f0d27a;line-height:1.7;
 }
-.breadcrumb a{color:var(--gold);}
-
-.diagram-wrap{
-  background:#fff;
-  border-radius:var(--radius-lg);
-  padding:24px;
-  box-shadow:var(--shadow-sm);
-  margin-bottom:32px;
-  border:1px solid rgba(20,40,70,.06);
-}
-.diagram-svg{width:100%;height:auto;max-width:760px;margin:0 auto;display:block;}
-.diagram-title{text-align:center;font-weight:900;color:var(--navy);margin-bottom:6px;font-size:1.2rem;}
-.diagram-note{text-align:center;color:var(--gray-mid);font-size:.9rem;margin-bottom:16px;}
-
-.parts-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:16px;
-  margin-top:24px;
-}
-.part-card{
-  background:#fff;
-  border-radius:14px;
-  padding:18px;
-  box-shadow:var(--shadow-sm);
-  border-right:4px solid var(--teal);
-  border-top:1px solid rgba(20,40,70,.06);
-  border-left:1px solid rgba(20,40,70,.06);
-  border-bottom:1px solid rgba(20,40,70,.06);
-}
-.part-card .num{
-  display:inline-flex;
-  width:32px;height:32px;
-  background:var(--teal);
-  color:#fff;
-  border-radius:50%;
-  align-items:center;justify-content:center;
-  font-weight:900;
-  font-size:.9rem;
-  margin-inline-end:8px;
-}
-.part-card h4{
-  display:inline;
-  color:var(--navy);
-  font-size:1.05rem;
-}
-.part-card .en{color:var(--gray-mid);font-size:.85rem;font-weight:400;display:block;margin-top:2px;}
-.part-card ul{margin:10px 0 0;padding-inline-start:20px;color:var(--gray-mid);font-size:.92rem;}
-.part-card ul li{margin-bottom:4px;}
-.part-card p{font-size:.92rem;color:var(--gray-mid);margin-top:8px;}
-.part-card p strong{color:var(--navy);}
-
-.faults-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:14px;
-}
-.fault-card{
-  background:#fff;
-  padding:16px 18px;
-  border-radius:12px;
-  box-shadow:var(--shadow-sm);
-  border-right:4px solid var(--gold);
-  border-top:1px solid rgba(20,40,70,.06);
-  border-left:1px solid rgba(20,40,70,.06);
-  border-bottom:1px solid rgba(20,40,70,.06);
-}
-.fault-card h4{color:var(--navy);font-size:1rem;margin-bottom:6px;}
-.fault-card p{color:var(--gray-mid);font-size:.92rem;}
-
-.warn-box{
-  background:#fff8e6;
-  border:2px solid var(--gold);
-  border-radius:12px;
-  padding:18px;
-  margin:24px 0;
-}
-.warn-box h4{color:#8a6300;margin-bottom:8px;}
-.warn-box p{color:#6b4f00;font-size:.95rem;}
-
-/* ============================================
-   التذييل
-   ============================================ */
-footer.site-footer{
-  background:var(--navy-dark);
-  color:rgba(255,255,255,.85);
-  padding:44px 0 20px;
-  margin-top:0;
-}
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr;
-  gap:30px;
-  margin-bottom:30px;
-}
-.footer-col h4{color:var(--gold);margin-bottom:14px;font-size:1.1rem;}
-.footer-col p,.footer-col a{color:rgba(255,255,255,.85);font-size:.95rem;display:block;margin-bottom:8px;}
-.footer-col a:hover{color:var(--gold);}
-.footer-phones a{direction:ltr;display:inline-block;font-weight:700;}
 .footer-bottom{
-  border-top:1px solid rgba(255,255,255,.15);
-  padding-top:16px;
-  text-align:center;
-  font-size:.88rem;
-  color:rgba(255,255,255,.6);
+  border-top:1px solid rgba(255,255,255,.1);padding:22px 0;
+  display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:13px;color:#8fb0a2;
+}
+.footer-bottom .heart{color:var(--gold-400)}
+
+/* زر واتساب عائم */
+.wa-float{
+  position:fixed;bottom:22px;left:22px;z-index:70;
+  width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;
+  display:grid;place-items:center;font-size:28px;box-shadow:0 10px 26px rgba(37,211,102,.45);
+  transition:transform .25s,box-shadow .25s;
+}
+.wa-float:hover{transform:scale(1.08);box-shadow:0 14px 32px rgba(37,211,102,.6)}
+.wa-float::after{
+  content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;
+  animation:pulse 2s ease-out infinite;
+}
+@keyframes pulse{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){.wa-float::after{animation:none}}
+
+/* ============================================================
+   17) حركات الظهور
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
 }
 
-/* ============================================
-   أزرار عائمة للاتصال السريع
-   ============================================ */
-.floating-actions{
-  position:fixed;
-  bottom:18px;
-  left:18px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  z-index:90;
+/* ============================================================
+   18) التجاوب
+   ============================================================ */
+@media (max-width:1080px){
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .phases{grid-template-columns:1fr;gap:18px}
+  .org-branches{grid-template-columns:1fr 1fr}
+  .org-branches::before,.org-branch::before{display:none}
+  .org-branches{gap:16px}
+  .ops-grid{grid-template-columns:1fr;gap:18px}
+  .exp-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .why-wrap{grid-template-columns:1fr;gap:36px}
+  .legal-grid{grid-template-columns:1fr;gap:28px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+  .contact-wrap{grid-template-columns:1fr}
+  .share-examples{grid-template-columns:repeat(3,1fr)}
+  .trust-inner{grid-template-columns:1fr 1fr}
+  .trust-item:nth-child(2){border-left:none}
 }
-.float-btn{
-  width:56px;height:56px;
-  border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  box-shadow:var(--shadow-md);
-  font-size:1.5rem;
-  color:#fff;
-  transition:var(--transition);
-}
-.float-btn:hover{transform:scale(1.08);}
-.float-call{background:var(--teal);}
-.float-wa{background:#25D366;}
-
-/* ============================================
-   استجابة الهاتف
-   ============================================ */
-@media (max-width:900px){
-  .hero-grid{grid-template-columns:1fr;}
-  .hero h1{font-size:1.8rem;}
-  .services-grid,.ba-grid,.steps-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr;}
-  .form-grid{grid-template-columns:1fr;}
-  .form-actions{grid-template-columns:1fr;}
-  nav.main-nav{
-    display:none;
-    position:absolute;
-    top:100%;right:0;left:0;
-    background:#fff;
-    flex-direction:column;
-    padding:12px;
-    box-shadow:var(--shadow-md);
-    border-top:1px solid var(--gray-light);
-  }
-  nav.main-nav.open{display:flex;}
-  nav.main-nav a{width:100%;padding:14px;font-size:1.05rem;}
-  .menu-toggle{display:flex;}
-  .header-phones{display:none;}
-  .header-inner{padding:10px 14px;}
-  .logo-svg{width:110px;}
-  .section{padding:40px 0;}
-  .section-title{font-size:1.5rem;}
-  h1{font-size:1.6rem;}
-  .service-hero h1{font-size:1.6rem;}
-  .form-wrap{padding:20px 16px;}
-  .ba-compare{grid-template-columns:1fr;gap:6px;}
-  .ba-arrow{transform:rotate(90deg);text-align:center;}
-  .ba-img img{height:180px;}
+@media (max-width:768px){
+  .nav{display:none}
+  .header-cta .btn{display:none}
+  .burger{display:block}
+  .section{padding:64px 0}
+  .hero{min-height:auto;padding:0}
+  .hero-inner{padding:54px 0 70px}
+  .hero h1{font-size:clamp(40px,12vw,64px)}
+  .hero-actions .btn{flex:1;min-width:150px}
+  .form-grid{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+  .reg-head{padding:24px}
+  .reg-body{padding:24px}
+  .share-head{padding:28px 22px}
+  .share-body{padding:24px}
+  .share-examples{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gallery .g-wide{grid-column:span 2}
+  .gallery .g-tall{grid-row:span 1}
+  .total-box{flex-direction:column;align-items:flex-start}
+  .org-regions{padding:20px}
+  .contact-body{padding:26px}
+  .contact-visual{padding:26px}
 }
 @media (max-width:480px){
-  body{font-size:16px;}
-  .hero h1{font-size:1.55rem;}
-  .btn{font-size:1rem;padding:13px 18px;}
-  .hero-phone{font-size:1rem;padding:9px 14px;}
+  .exp-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .exp-item{padding:16px 10px}
+  .exp-item strong{font-size:13.5px}
+  .stock-opt{min-width:56px;padding:12px 4px}
+  .stock-opt .num{font-size:17px}
+  .share-examples{grid-template-columns:1fr 1fr}
+  .hero-actions{flex-direction:column}
+  .hero-actions .btn{width:100%}
+  .wa-float{width:52px;height:52px;font-size:24px;bottom:16px;left:16px}
+  .trust-item{padding:16px 10px}
+  .trust-item strong{font-size:13.5px}
+  .trust-item span{font-size:11.5px}
 }
-
-/* إخفاء شريط التمرير الأفقي */
-body{overflow-x:hidden;}
 </style>
 </head>
 <body>
 
-<!-- ============================================
-     رأس الموقع
-     ============================================ -->
-<header class="site-header">
-  <div class="top-bar">
-    <strong>TRUST</strong> — رقم واحد في مصر &nbsp;|&nbsp; قبل ما تحتار، كلم TRUST وخد القرار
+<!-- ===================== الشريط العلوي ===================== -->
+<div class="topbar">
+  <div class="marquee">
+    <div class="marquee-track">
+      صلِّ على رسول الله ﷺ &nbsp;•&nbsp; سبحان الله وبحمده، سبحان الله العظيم &nbsp;•&nbsp; أستغفر الله العظيم وأتوب إليه &nbsp;•&nbsp; اللهم صلِّ وسلم على نبينا محمد &nbsp;•&nbsp; صلِّ على رسول الله ﷺ
+    </div>
   </div>
-  <div class="header-inner">
-    <a href="#home" class="logo-wrap" onclick="showPage('home');return false;" aria-label="TRUST - الرئيسية">
-      <!-- شعار TRUST بـ SVG: T أحمر، R أحمر، U أصفر، S أحمر، T أحمر -->
-      <svg class="logo-svg" viewBox="0 0 260 70" role="img" aria-label="TRUST">
-        <defs>
-          <linearGradient id="trustGlow" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#d32f2f"/>
-            <stop offset="100%" stop-color="#b71c1c"/>
-          </linearGradient>
-        </defs>
-        <!-- T -->
-        <text x="6" y="52" font-family="Cairo, sans-serif" font-weight="900" font-size="52" fill="#d32f2f" transform="skewX(-6)">T</text>
-        <!-- R -->
-        <text x="52" y="52" font-family="Cairo, sans-serif" font-weight="900" font-size="52" fill="#d32f2f" transform="skewX(-6)">R</text>
-        <!-- U -->
-        <text x="102" y="52" font-family="Cairo, sans-serif" font-weight="900" font-size="52" fill="#e0b23a" transform="skewX(-6)">U</text>
-        <!-- S -->
-        <text x="148" y="52" font-family="Cairo, sans-serif" font-weight="900" font-size="52" fill="#d32f2f" transform="skewX(-6)">S</text>
-        <!-- T -->
-        <text x="196" y="52" font-family="Cairo, sans-serif" font-weight="900" font-size="52" fill="#d32f2f" transform="skewX(-6)">T</text>
-        <!-- خط ديناميكي أسفل الشعار -->
-        <path d="M4 62 Q 130 74 256 58" stroke="#0f9b8e" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".65"/>
-      </svg>
-      <div class="logo-tagline">
-        <span class="num1">رقم واحد في مصر</span>
-        <span class="sub">لصيانة الأجهزة المنزلية</span>
+</div>
+
+<!-- ===================== الهيدر ===================== -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="هايبر اذكر الله">
+      <div class="brand-mark"><i class="fa-solid fa-store"></i></div>
+      <div class="brand-text">
+        <strong>هايبر اذكر الله</strong>
+        <span>حلم العمر</span>
       </div>
     </a>
-
-    <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
-      <a href="#home" onclick="showPage('home');return false;" data-nav="home">الرئيسية</a>
-      <a href="#fridge" onclick="showPage('fridge');return false;" data-nav="fridge">الثلاجات</a>
-      <a href="#washer" onclick="showPage('washer');return false;" data-nav="washer">الغسالات</a>
-      <a href="#cooker" onclick="showPage('cooker');return false;" data-nav="cooker">البوتاجازات</a>
-      <a href="#contact" onclick="showPage('contact');return false;" data-nav="contact">اتصل بنا</a>
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#about">عن المشروع</a>
+      <a href="#phases">خطة التوسع</a>
+      <a href="#structure">هيكل الفروع</a>
+      <a href="#share">المشاركة</a>
+      <a href="#register">التسجيل</a>
+      <a href="#faq">الأسئلة</a>
     </nav>
-
-    <div class="header-phones">
-      <!-- تعديل أرقام الهاتف من هنا -->
-      <a href="tel:01156661812"><span class="ico">📞</span> 01156661812</a>
-      <a href="tel:01124997077"><span class="ico">📞</span> 01124997077</a>
+    <div class="header-cta">
+      <a href="#register" class="btn btn--green"><i class="fa-solid fa-user-plus"></i> سجّل رغبتك</a>
+      <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
   </div>
 </header>
 
-<main>
+<!-- قائمة الموبايل -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-head">
+    <div class="brand">
+      <div class="brand-mark"><i class="fa-solid fa-store"></i></div>
+      <div class="brand-text"><strong>هايبر اذكر الله</strong><span>حلم العمر</span></div>
+    </div>
+    <button class="close-menu" id="closeMenu" aria-label="إغلاق القائمة"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <a href="#about">عن المشروع</a>
+  <a href="#phases">خطة التوسع</a>
+  <a href="#structure">هيكل الفروع</a>
+  <a href="#ops">كيف يعمل</a>
+  <a href="#experience">تجربة العميل</a>
+  <a href="#share">المشاركة</a>
+  <a href="#register">التسجيل</a>
+  <a href="#faq">الأسئلة الشائعة</a>
+  <a href="#contact">التواصل</a>
+  <a href="#register" class="btn btn--gold btn--block"><i class="fa-solid fa-user-plus"></i> سجّل رغبتك في المشاركة</a>
+</div>
 
-<!-- ============================================
-     الواجهة الرئيسية
-     ============================================ -->
-<section id="page-home" class="page active">
-
-  <!-- Hero -->
-  <div class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="hero-badge">✦ TRUST — رقم واحد في مصر</span>
-        <h1>قبل ما تحتار، <span class="accent">كلم TRUST</span> وخد القرار</h1>
-        <p class="hero-sub">صيانة الثلاجات والغسالات والبوتاجازات في الإسكندرية</p>
-        <div class="hero-phones">
-          <a href="tel:01156661812" class="hero-phone">📞 01156661812</a>
-          <a href="tel:01124997077" class="hero-phone">📞 01124997077</a>
-        </div>
-        <div class="hero-cta">
-          <a href="#orderFormHome" class="btn btn-gold btn-lg" onclick="document.getElementById('orderFormHome').scrollIntoView({behavior:'smooth'});return false;">اطلب صيانة الآن</a>
-          <a href="#contact" class="btn btn-outline btn-lg" onclick="showPage('contact');return false;">اتصل بنا</a>
-          <a href="#services" class="btn btn-outline btn-lg" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});return false;">اكتشف خدماتنا</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <!-- صورة الثلاجة الرئيسية - يمكن تغيير الرابط -->
-        <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=800&q=80" alt="صيانة أجهزة منزلية - TRUST" loading="eager">
+<!-- ===================== الواجهة الرئيسية ===================== -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="https://i.postimg.cc/bvTsWYj6/20210206115706067.jpg" alt="ممر هايبر ماركت حديث وواسع" loading="eager">
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge"><i class="fa-solid fa-star"></i> مشروع كيان تجاري متكامل — يبدأ من الإسكندرية</div>
+      <h1>حلم <span class="gold">العمر</span></h1>
+      <div class="project-name">هايبر اذكر الله</div>
+      <p class="lead">
+        مش مجرد هايبر ماركت… ده كيان تجاري بنحلم نبنيه مع بعض، ونبدأ رحلتنا من الإسكندرية إلى باقي محافظات مصر بإذن الله.
+      </p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn--gold"><i class="fa-solid fa-circle-info"></i> تعرف على المشروع</a>
+        <a href="#register" class="btn btn--ghost"><i class="fa-solid fa-user-plus"></i> سجّل رغبتك في المشاركة</a>
       </div>
     </div>
   </div>
+  <a href="#about" class="hero-scroll" aria-label="انتقل للأسفل"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
 
-  <!-- الخدمات -->
-  <div class="section" id="services">
-    <div class="container">
-      <h2 class="section-title">خدماتنا الأساسية</h2>
-      <p class="section-sub">صيانة متخصصة للأجهزة المنزلية بأيدي فنيين مؤهلين</p>
-      <div class="services-grid">
-        <article class="service-card">
-          <!-- صورة الثلاجة -->
-          <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=600&q=80" alt="صيانة ثلاجات" loading="lazy">
-          <div class="service-card-body">
-            <h3>صيانة الثلاجات</h3>
-            <p>فحص وإصلاح أعطال التبريد، الكومبروسر، المروحة، الثرموستات، وتسريب المياه.</p>
-            <button class="btn btn-primary" onclick="showPage('fridge')">تفاصيل صيانة الثلاجات</button>
-          </div>
-        </article>
-        <article class="service-card">
-          <!-- صورة الغسالة -->
-          <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=600&q=80" alt="صيانة غسالات" loading="lazy">
-          <div class="service-card-body">
-            <h3>صيانة الغسالات</h3>
-            <p>إصلاح مشاكل الصرف، العصر، الاهتزاز، تسريب المياه، وأعطال لوحة التحكم.</p>
-            <button class="btn btn-primary" onclick="showPage('washer')">تفاصيل صيانة الغسالات</button>
-          </div>
-        </article>
-        <article class="service-card">
-          <!-- صورة البوتاجاز -->
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="صيانة بوتاجازات" loading="lazy">
-          <div class="service-card-body">
-            <h3>صيانة البوتاجازات</h3>
-            <p>إصلاح الشعلات، الإشعال، الفرن، وحل مشاكل الحرارة والإغلاق.</p>
-            <button class="btn btn-primary" onclick="showPage('cooker')">تفاصيل صيانة البوتاجازات</button>
-          </div>
-        </article>
-      </div>
-    </div>
+<!-- شريط الثقة -->
+<div class="trust-strip">
+  <div class="container trust-inner">
+    <div class="trust-item"><i class="fa-solid fa-store"></i><strong>هايبر ماركت رئيسي</strong><span>نقطة الانطلاق</span></div>
+    <div class="trust-item"><i class="fa-solid fa-warehouse"></i><strong>مخزن مركزي</strong><span>إمداد موحد</span></div>
+    <div class="trust-item"><i class="fa-solid fa-shop"></i><strong>شبكة فروع</strong><span>داخل الإسكندرية</span></div>
+    <div class="trust-item"><i class="fa-solid fa-chart-line"></i><strong>خطة توسع</strong><span>إلى محافظات مصر</span></div>
   </div>
+</div>
 
-  <!-- قبل وبعد -->
-  <div class="section ba-section">
-    <div class="container">
-      <h2 class="section-title">قبل الصيانة وبعدها</h2>
-      <p class="section-sub">نماذج توضيحية لبعض الأعطال وكيفية إصلاحها. الصور تجريبية وقابلة للاستبدال.</p>
-      <div class="ba-grid">
-
-        <article class="ba-card">
-          <h3>❄️ ثلاجة</h3>
-          <div class="ba-compare">
-            <div class="ba-img">
-              <!-- صورة الثلاجة قبل الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=400&q=60" alt="صورة الثلاجة قبل الصيانة" loading="lazy">
-              <span class="ba-label">قبل</span>
-            </div>
-            <div class="ba-arrow">←</div>
-            <div class="ba-img">
-              <!-- صورة الثلاجة بعد الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&q=60" alt="صورة الثلاجة بعد الصيانة" loading="lazy">
-              <span class="ba-label after">بعد</span>
-            </div>
-          </div>
-          <p class="ba-desc">ضعف التبريد وتسريب المياه — تم فحص دورة التبريد وتنظيف مجرى التصريف.</p>
-        </article>
-
-        <article class="ba-card">
-          <h3>🌀 غسالة</h3>
-          <div class="ba-compare">
-            <div class="ba-img">
-              <!-- صورة الغسالة قبل الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?w=400&q=60" alt="صورة الغسالة قبل الصيانة" loading="lazy">
-              <span class="ba-label">قبل</span>
-            </div>
-            <div class="ba-arrow">←</div>
-            <div class="ba-img">
-              <!-- صورة الغسالة بعد الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&q=60" alt="صورة الغسالة بعد الصيانة" loading="lazy">
-              <span class="ba-label after">بعد</span>
-            </div>
-          </div>
-          <p class="ba-desc">اهتزاز شديد وعدم العصر — تم ضبط المساعدين وفحص رولمان البلي.</p>
-        </article>
-
-        <article class="ba-card">
-          <h3>🔥 بوتاجاز</h3>
-          <div class="ba-compare">
-            <div class="ba-img">
-              <!-- صورة البوتاجاز قبل الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=60" alt="صورة البوتاجاز قبل الصيانة" loading="lazy">
-              <span class="ba-label">قبل</span>
-            </div>
-            <div class="ba-arrow">←</div>
-            <div class="ba-img">
-              <!-- صورة البوتاجاز بعد الصيانة - استبدل الرابط -->
-              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&q=60" alt="صورة البوتاجاز بعد الصيانة" loading="lazy">
-              <span class="ba-label after">بعد</span>
-            </div>
-          </div>
-          <p class="ba-desc">شعلة لا تعمل وإشعال ضعيف — تم تنظيف الشعلة وفحص الإشعال.</p>
-        </article>
-
+<!-- ===================== قسم: ما هو المشروع ===================== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow"><i class="fa-solid fa-lightbulb"></i> ما هو المشروع؟</span>
+        <h2>فكرة <span class="accent">كيان تجاري متكامل</span>… وليست مجرد فكرة محل</h2>
+        <p>
+          فكرتنا هي تأسيس شركة مصرية متخصصة في إنشاء وتشغيل سلسلة من الهايبر ماركت، تبدأ من مدينة الإسكندرية، ثم تتوسع تدريجياً إلى محافظات مصر المختلفة.
+        </p>
+        <p>
+          المشروع ليس مجرد محل أو سوبر ماركت صغير. نطمح إلى تأسيس منظومة تجارية متكاملة تجمع بين الهايبر الرئيسي، والمخزن المركزي، وشبكة الفروع، وإدارة مركزية موحدة، ونظام مشتريات وتسعير ومحاسبة ورقابة، وفريق عمل متخصص، وخطة توسع مدروسة.
+        </p>
+        <div class="pillars">
+          <div class="pillar"><i class="fa-solid fa-store"></i><div><strong>هايبر ماركت رئيسي</strong><span>نقطة الانطلاق الكبرى</span></div></div>
+          <div class="pillar"><i class="fa-solid fa-warehouse"></i><div><strong>مخزن مركزي</strong><span>إمداد موحد للفروع</span></div></div>
+          <div class="pillar"><i class="fa-solid fa-shop"></i><div><strong>فروع متعددة</strong><span>داخل الإسكندرية</span></div></div>
+          <div class="pillar"><i class="fa-solid fa-building-columns"></i><div><strong>إدارة مركزية</strong><span>نظام تشغيل واحد</span></div></div>
+          <div class="pillar"><i class="fa-solid fa-calculator"></i><div><strong>نظام محاسبي</strong><span>مشتريات وتسعير ورقابة</span></div></div>
+          <div class="pillar"><i class="fa-solid fa-people-group"></i><div><strong>فريق متخصص</strong><span>إدارة وتشغيل</span></div></div>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <!-- خطوات طلب الخدمة -->
-  <div class="section">
-    <div class="container">
-      <h2 class="section-title">خطوات طلب الخدمة</h2>
-      <p class="section-sub">ثلاث خطوات بسيطة وتوصل لفني TRUST</p>
-      <div class="steps-grid">
-        <div class="step-card">
-          <span class="step-num">1</span>
-          <h3>املأ البيانات</h3>
-          <p>اكتب اسمك ورقم موبايلك ونوع الجهاز ووصف العطل والعنوان والموعد المفضل.</p>
-        </div>
-        <div class="step-card">
-          <span class="step-num">2</span>
-          <h3>راجع الطلب</h3>
-          <p>هيظهرلك ملخص كامل بكل بياناتك. راجعها وعدّل أي حاجة قبل الإرسال.</p>
-        </div>
-        <div class="step-card">
-          <span class="step-num">3</span>
-          <h3>أرسل عبر واتساب</h3>
-          <p>افتح واتساب برسالة جاهزة منظمة. المركز هيراجع الموعد ويأكده معاك.</p>
+      <div class="about-visual reveal">
+        <img src="https://i.postimg.cc/jjXLmqrZ/pngtree-a-supermarket-shelf-filled-with-colorful-rows-of-various-products-including-image-17200503.jpg" alt="أرفف هايبر ماركت مليئة بالمنتجات" loading="lazy">
+        <div class="about-badge">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <div><strong>منظومة واحدة</strong><span>رؤية — إدارة — تشغيل</span></div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- الأسئلة الشائعة -->
-  <div class="section" style="background:#fff;">
-    <div class="container">
-      <h2 class="section-title">الأسئلة الشائعة</h2>
-      <p class="section-sub">إجابات واضحة عن أكثر الأسئلة تكرارًا</p>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">ما البيانات المطلوبة لطلب الصيانة؟ <span class="arrow">⌄</span></button>
-          <div class="faq-a"><p>الاسم، رقم الموبايل، نوع الجهاز، وصف العطل، العنوان، والموعد المفضل. الماركة والموديل اختياريان لكن يساعدان الفني.</p></div>
+<!-- ===================== قسم: رحلة المشروع ===================== -->
+<section class="section section--tint" id="phases">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-route"></i> رحلة المشروع</span>
+      <h2>نبدأ من <span class="accent">الإسكندرية</span>… ونكبر خطوة بخطوة</h2>
+      <p>خطة توسع مرحلية واضحة، تبدأ بتأسيس الهايبر الرئيسي والمخزن المركزي، ثم التوسع داخل الإسكندرية، ثم الانطلاق إلى المحافظات.</p>
+    </div>
+    <div class="phases">
+      <div class="phase reveal">
+        <div class="phase-num">1</div>
+        <h3>المرحلة الأولى</h3>
+        <div class="phase-tag">الإسكندرية — التأسيس</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> تأسيس الهايبر ماركت الرئيسي</li>
+          <li><i class="fa-solid fa-check"></i> إنشاء المخزن المركزي</li>
+          <li><i class="fa-solid fa-check"></i> تجهيز الفروع المحلية</li>
+          <li><i class="fa-solid fa-check"></i> تشغيل نظام الإدارة والتوريد الموحد</li>
+        </ul>
+      </div>
+      <div class="phase reveal">
+        <div class="phase-num">2</div>
+        <h3>المرحلة الثانية</h3>
+        <div class="phase-tag">التوسع داخل الإسكندرية</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> إضافة فروع في مناطق مختلفة</li>
+          <li><i class="fa-solid fa-check"></i> توحيد الأسعار والعروض</li>
+          <li><i class="fa-solid fa-check"></i> ربط الفروع بالمخزن المركزي</li>
+          <li><i class="fa-solid fa-check"></i> توحيد نظام التشغيل والرقابة</li>
+        </ul>
+      </div>
+      <div class="phase reveal">
+        <div class="phase-num">3</div>
+        <h3>المرحلة الثالثة</h3>
+        <div class="phase-tag">التوسع إلى المحافظات</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> دراسة المحافظات والمدن المناسبة</li>
+          <li><i class="fa-solid fa-check"></i> اختيار المواقع وفق دراسات السوق</li>
+          <li><i class="fa-solid fa-check"></i> افتتاح فروع جديدة بصورة تدريجية</li>
+          <li><i class="fa-solid fa-check"></i> الحفاظ على نفس معايير التشغيل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="phases-note reveal">
+      <i class="fa-solid fa-circle-info" style="color:var(--gold-600)"></i>
+      هذه مراحل تخطيطية مقترحة للمشروع، وليست إعلاناً عن افتتاح أي فرع. يتم تحديد التفاصيل النهائية والمواقع وفق دراسات الجدوى والإجراءات القانونية.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== قسم: الهيكل التنظيمي ===================== -->
+<section class="section" id="structure">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-sitemap"></i> الهيكل المقترح</span>
+      <h2>إدارة واحدة… <span class="accent">ونظام واحد</span></h2>
+      <p>تصور مبدئي لهيكل الفروع داخل الإسكندرية، يوضح ارتباط جميع الفروع بالإدارة الرئيسية والمخزن المركزي.</p>
+    </div>
+    <div class="org reveal">
+      <div class="org-root">
+        <strong>الإدارة الرئيسية</strong>
+        <span>هايبر ماركت اذكر الله</span>
+      </div>
+      <div class="org-connector"></div>
+      <div class="org-branches">
+        <div class="org-branch">
+          <i class="fa-solid fa-store"></i>
+          <strong>الهايبر ماركت الرئيسي</strong>
+          <span>نقطة الانطلاق</span>
         </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">هل يمكن تحديد موعد مفضل؟ <span class="arrow">⌄</span></button>
-          <div class="faq-a"><p>نعم، اختار التاريخ والوقت المناسب لك. المركز هيراجع الموعد ويأكده معاك، مش بيتم التأكيد تلقائيًا.</p></div>
+        <div class="org-branch">
+          <i class="fa-solid fa-warehouse"></i>
+          <strong>المخزن المركزي</strong>
+          <span>إمداد موحد</span>
         </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">هل يمكن إرفاق صورة للجهاز؟ <span class="arrow">⌄</span></button>
-          <div class="faq-a"><p>تقدر تختار صورة من جهازك في النموذج، لكن مش بتتبعت تلقائيًا مع رسالة واتساب. هتحتاج ترفقها بنفسك داخل واتساب بعد فتح المحادثة.</p></div>
+        <div class="org-branch">
+          <i class="fa-solid fa-shop"></i>
+          <strong>شبكة الفروع المحلية</strong>
+          <span>داخل الإسكندرية</span>
         </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">كيف أشرح العطل؟ <span class="arrow">⌄</span></button>
-          <div class="faq-a"><p>اكتب الأعراض بوضوح: الجهاز بيعمل ولا لأ، إمتى بدأت المشكلة، في صوت أو تسريب أو رسالة خطأ. كل ما تكون التفاصيل أوضح، الفني يجهز أسرع.</p></div>
+      </div>
+      <div class="org-regions">
+        <div class="org-regions-head">
+          <strong>مناطق مقترحة لدراسة افتتاح فروع</strong>
+          <span>اضغط على أي منطقة لعرض ملاحظة توضيحية</span>
         </div>
-        <div class="faq-item">
-          <button class="faq-q" onclick="toggleFaq(this)">هل إرسال الطلب يعني تأكيد الموعد؟ <span class="arrow">⌄</span></button>
-          <div class="faq-a"><p>لا. إرسال الطلب معناه إن المركز استلم طلبك وهيتواصل معاك لتأكيد الموعد. التأكيد بيتم من المركز نفسه.</p></div>
+        <div class="region-chips" id="regionChips">
+          <button class="chip" data-region="سيدي بشر">سيدي بشر</button>
+          <button class="chip" data-region="ميامي">ميامي</button>
+          <button class="chip" data-region="العصافرة">العصافرة</button>
+          <button class="chip" data-region="المندرة">المندرة</button>
+          <button class="chip" data-region="فيكتوريا">فيكتوريا</button>
+          <button class="chip" data-region="لوران">لوران</button>
+          <button class="chip" data-region="جليم">جليم</button>
+          <button class="chip" data-region="كليوباترا">كليوباترا</button>
+          <button class="chip" data-region="الإبراهيمية">الإبراهيمية</button>
+          <button class="chip" data-region="مناطق أخرى">مناطق أخرى</button>
+        </div>
+        <div class="region-detail" id="regionDetail">
+          <i class="fa-solid fa-circle-info"></i>
+          اختر منطقة من القائمة لعرض تفاصيل مبدئية.
+        </div>
+      </div>
+    </div>
+    <div class="org-note reveal">
+      <i class="fa-solid fa-circle-info" style="color:var(--gold-600)"></i>
+      هذه أمثلة لمناطق يمكن دراسة افتتاح فروع بها، وليست مواقع مؤكدة أو تعهدات بافتتاح فروع فيها. يتم تحديد المواقع النهائية وفق دراسات الجدوى.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== قسم: كيف يعمل الكيان ===================== -->
+<section class="section section--tint" id="ops">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-gears"></i> نموذج التشغيل</span>
+      <h2>إدارة واحدة — <span class="accent">نظام واحد</span> — اسم واحد</h2>
+      <p>مستوى خدمة موحد بين جميع الفروع، مع إدارة مركزية للمشتريات والتسعير والرقابة.</p>
+    </div>
+    <div class="ops-grid">
+      <div class="op-card reveal">
+        <div class="op-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>المشتريات والتوريد</h3>
+        <div class="op-sub">إمداد موحد للفروع</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> إدارة مركزية للمشتريات</li>
+          <li><i class="fa-solid fa-check"></i> تنظيم التوريد إلى الفروع</li>
+          <li><i class="fa-solid fa-check"></i> نظام مخزون واضح</li>
+          <li><i class="fa-solid fa-check"></i> متابعة توافر المنتجات</li>
+        </ul>
+      </div>
+      <div class="op-card reveal">
+        <div class="op-icon"><i class="fa-solid fa-tags"></i></div>
+        <h3>التسعير والعروض</h3>
+        <div class="op-sub">سياسة موحدة بين الفروع</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> سياسة أسعار وعروض موحدة</li>
+          <li><i class="fa-solid fa-check"></i> هدفنا أسعار مساوية أو أقل من المنافسين في المنتجات التي نستطيع المنافسة فيها</li>
+          <li><i class="fa-solid fa-check"></i> عروض مستمرة</li>
+          <li><i class="fa-solid fa-check"></i> كوبونات وجوائز على المشتريات وفق قواعد واضحة</li>
+        </ul>
+      </div>
+      <div class="op-card reveal">
+        <div class="op-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>الإدارة والرقابة</h3>
+        <div class="op-sub">متابعة دقيقة للأداء</div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> فريق متخصص</li>
+          <li><i class="fa-solid fa-check"></i> نظام محاسبي وإداري</li>
+          <li><i class="fa-solid fa-check"></i> متابعة المخزون والمبيعات</li>
+          <li><i class="fa-solid fa-check"></i> مراجعة الأداء وتقارير دورية</li>
+          <li><i class="fa-solid fa-check"></i> رقابة على التشغيل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ops-motto reveal">
+      <span class="accent">إدارة واحدة</span> — <span class="accent">نظام واحد</span> — <span class="accent">اسم واحد</span> — مستوى خدمة موحد.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== قسم: تجربة العميل + المعرض ===================== -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-cart-shopping"></i> تجربة العميل</span>
+      <h2>كل احتياجاتك في <span class="accent">مكان واحد</span></h2>
+      <p>هدفنا أن يجد العميل احتياجاته في مكان واحد، بأسعار تنافسية، وتجربة تسوق مريحة ومنظمة.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-item reveal"><i class="fa-solid fa-basket-shopping"></i><strong>المواد الغذائية</strong><span>أساسيات يومية</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-carrot"></i><strong>الخضروات والفاكهة</strong><span>طازجة</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-drumstick-bite"></i><strong>اللحوم والدواجن</strong><span>قسم متخصص</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-cheese"></i><strong>الألبان والأجبان</strong><span>تنوع واسع</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-snowflake"></i><strong>المجمدات</strong><span>حفظ آمن</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-spray-can-sparkles"></i><strong>المنظفات</strong><span>عناية بالمنزل</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-blender"></i><strong>الأدوات المنزلية</strong><span>احتياجات المنزل</span></div>
+      <div class="exp-item reveal"><i class="fa-solid fa-box-open"></i><strong>الاستهلاكية اليومية</strong><span>كل ما تحتاجه</span></div>
+    </div>
+    <div class="gallery reveal" id="gallery">
+      <figure class="g-wide" data-src="https://i.postimg.cc/wBV7Zxdb/pngtree-fresh-fruits-and-vegetables-in-supermarket-produce-section-image-17172070.jpg">
+        <img src="https://i.postimg.cc/wBV7Zxdb/pngtree-fresh-fruits-and-vegetables-in-supermarket-produce-section-image-17172070.jpg" alt="قسم الخضروات والفاكهة الطازجة" loading="lazy">
+        <figcaption>قسم الخضروات والفاكهة الطازجة</figcaption>
+      </figure>
+      <figure class="g-tall" data-src="https://i.postimg.cc/g0DnQcPS/pngtree-a-well-stocked-supermarket-produce-aisle-with-variety-of-fruits-and-image-16926227.jpg">
+        <img src="https://i.postimg.cc/g0DnQcPS/pngtree-a-well-stocked-supermarket-produce-aisle-with-variety-of-fruits-and-image-16926227.jpg" alt="ممر منتجات طازجة في هايبر ماركت" loading="lazy">
+        <figcaption>ممر المنتجات الطازجة</figcaption>
+      </figure>
+      <figure data-src="https://i.postimg.cc/L6Yg5Mzm/81qb-N7qx-H-L-AC-UF894-1000-QL80.jpg">
+        <img src="https://i.postimg.cc/L6Yg5Mzm/81qb-N7qx-H-L-AC-UF894-1000-QL80.jpg" alt="أرفف منتجات متنوعة" loading="lazy">
+        <figcaption>تنوع المنتجات</figcaption>
+      </figure>
+      <figure data-src="https://i.postimg.cc/SKrJ3QpV/1461380347-483614-759-129065.jpg">
+        <img src="https://i.postimg.cc/SKrJ3QpV/1461380347-483614-759-129065.jpg" alt="ممر داخل هايبر ماركت" loading="lazy">
+        <figcaption>ممرات واسعة ومنظمة</figcaption>
+      </figure>
+      <figure class="g-wide" data-src="https://i.postimg.cc/ZqcC2YhM/pngtree-busy-supermarket-aisle-shoppers-browse-produce-and-groceries-under-bright-lights-image-20707.webp">
+        <img src="https://i.postimg.cc/ZqcC2YhM/pngtree-busy-supermarket-aisle-shoppers-browse-produce-and-groceries-under-bright-lights-image-20707.webp" alt="تجربة تسوق داخل هايبر ماركت" loading="lazy">
+        <figcaption>تجربة تسوق مريحة</figcaption>
+      </figure>
+      <figure data-src="https://i.postimg.cc/KYNRwcy0/3.jpg">
+        <img src="https://i.postimg.cc/KYNRwcy0/3.jpg" alt="عرض منتجات داخل الهايبر" loading="lazy">
+        <figcaption>عروض ومنتجات</figcaption>
+      </figure>
+      <figure data-src="https://i.postimg.cc/W4nhCpPw/658451-0.jpg">
+        <img src="https://i.postimg.cc/W4nhCpPw/658451-0.jpg" alt="أقسام الهايبر ماركت" loading="lazy">
+        <figcaption>أقسام متكاملة</figcaption>
+      </figure>
+    </div>
+    <p class="exp-claim reveal">
+      هدفنا أن يجد العميل احتياجاته في مكان واحد، <span class="accent">بأسعار تنافسية</span>، وتجربة تسوق مريحة ومنظمة.
+    </p>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" alt="عرض الصورة" id="lbImg">
+</div>
+
+<!-- ===================== قسم: لماذا المشاركة ===================== -->
+<section class="section section--dark" id="why">
+  <div class="container">
+    <div class="why-wrap">
+      <div class="why-copy reveal">
+        <span class="eyebrow" style="background:rgba(201,162,39,.18);color:var(--gold-300)"><i class="fa-solid fa-handshake"></i> لماذا المشاركة؟</span>
+        <h2>حلم كبير <span class="accent">يبدأ بخطوة</span></h2>
+        <p>
+          تخيل أنك تدخل هايبر ماركت كبير، وتشاهد آلاف المنتجات والأقسام، وتعرف أنك ساهمت في تأسيس الكيان الذي يقف وراء هذا المشروع.
+        </p>
+        <p>
+          بدلاً من أن تبدأ مشروعاً صغيراً بمفردك، يمكنك التعبير عن رغبتك في المشاركة في تأسيس كيان تجاري أكبر، مع مجموعة من المشاركين، ضمن إطار قانوني وإداري واضح.
+        </p>
+        <div class="why-quote">
+          ده <span class="accent">حلم العمر</span>… حلم أن نبني مشروعاً كبيراً، ونبدأ من الإسكندرية، ونكبر خطوة بخطوة بإذن الله.
+        </div>
+      </div>
+      <div class="why-list reveal">
+        <div class="why-item"><i class="fa-solid fa-seedling"></i><div><strong>حلم كبير يبدأ بخطوة</strong><span>كل كيان كبير بدأ بفكرة وقرار.</span></div></div>
+        <div class="why-item"><i class="fa-solid fa-location-dot"></i><div><strong>من الإسكندرية ننطلق</strong><span>إلى مصر كلها بإذن الله.</span></div></div>
+        <div class="why-item"><i class="fa-solid fa-compass"></i><div><strong>كيان واحد، رؤية واحدة</strong><span>وطموح أكبر.</span></div></div>
+        <div class="why-item"><i class="fa-solid fa-flag"></i><div><strong>نريد أن نبني مشروعاً نفتخر به</strong><span>ونترك أثراً طيباً.</span></div></div>
+        <div class="why-item"><i class="fa-solid fa-file-signature"></i><div><strong>المشاركة تبدأ بالتخطيط والوضوح والثقة</strong><span>ضمن إطار قانوني وإداري واضح.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== قسم: المشاركة المقترحة ===================== -->
+<section class="section" id="share">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-coins"></i> المشاركة المقترحة</span>
+      <h2>ابدأ بالتعبير عن <span class="accent">رغبتك في المشاركة</span></h2>
+      <p>المشاركة المقترحة تبدأ من 20,000 جنيه مصري للسهم الواحد. يمكنك اختيار عدد الأسهم التي ترغب في المشاركة بها.</p>
+    </div>
+    <div class="share-card reveal">
+      <div class="share-head">
+        <h3>قيمة السهم المقترحة</h3>
+        <div class="price-line"><b>20,000</b> جنيه مصري للسهم الواحد</div>
+      </div>
+      <div class="share-body">
+        <div class="share-examples" id="shareExamples">
+          <!-- تُملأ ديناميكياً من JS بناءً على sharePrice -->
+        </div>
+        <div class="share-disclaimer">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <div>
+            <strong>تنبيه مهم</strong>
+            هذه أمثلة لقيمة المساهمة المقترحة وليست طلباً للدفع الآن. التسجيل الحالي هو تسجيل مبدئي للتعبير عن الرغبة في المشاركة فقط، ولا يمثل اكتتاباً أو شراء أسهم أو تأسيس ملكية قانونية أو التزاماً مالياً. ولن يتم دفع أي أموال في هذه المرحلة.
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- نموذج طلب الصيانة - الرئيسية -->
-  <div class="section form-section" id="orderFormHome">
-    <div class="container">
-      <div class="form-wrap">
-        <h3>اطلب صيانة الآن</h3>
-        <p class="hint">املأ البيانات التالية وسيتم تجهيز رسالة واتساب منظمة للمركز</p>
-        <form id="maintenanceFormHome" novalidate>
-          <input type="hidden" name="source" value="الرئيسية">
-          <!-- بيانات العميل -->
-          <fieldset>
-            <legend>👤 بيانات العميل</legend>
-            <div class="form-grid">
-              <div class="field">
-                <label for="h_name">اسم العميل <span class="req">*</span></label>
-                <input type="text" id="h_name" name="name" required placeholder="اكتب اسمك بالكامل" autocomplete="name">
-                <span class="err">من فضلك اكتب اسم العميل</span>
-              </div>
-              <div class="field">
-                <label for="h_phone">رقم موبايل العميل <span class="req">*</span></label>
-                <input type="tel" id="h_phone" name="phone" required placeholder="مثال: 01012345678" inputmode="tel" autocomplete="tel" dir="ltr">
-                <span class="err">من فضلك اكتب رقم موبايل صحيح</span>
-                <span class="help">الرقم ده هيظهر في رسالة واتساب عشان المركز يتواصل معاك</span>
-              </div>
-              <div class="field">
-                <label for="h_phone2">رقم بديل (اختياري)</label>
-                <input type="tel" id="h_phone2" name="phone2" placeholder="رقم إضافي للتواصل" inputmode="tel" dir="ltr">
-              </div>
-            </div>
-          </fieldset>
-
-          <!-- بيانات الجهاز -->
-          <fieldset>
-            <legend>🔧 بيانات الجهاز</legend>
-            <div class="form-grid">
-              <div class="field">
-                <label for="h_device">نوع الجهاز <span class="req">*</span></label>
-                <select id="h_device" name="device" required>
-                  <option value="">اختار نوع الجهاز</option>
-                  <option value="ثلاجة">ثلاجة</option>
-                  <option value="غسالة">غسالة</option>
-                  <option value="بوتاجاز">بوتاجاز</option>
-                  <option value="جهاز آخر">جهاز آخر</option>
-                </select>
-                <span class="err">من فضلك اختار نوع الجهاز</span>
-              </div>
-              <div class="field">
-                <label for="h_brand">الماركة (اختياري)</label>
-                <input type="text" id="h_brand" name="brand" placeholder="مثال: توشيبا، LG، سامسونج">
-              </div>
-              <div class="field">
-                <label for="h_model">الموديل (اختياري)</label>
-                <input type="text" id="h_model" name="model" placeholder="رقم الموديل إن وجد">
-              </div>
-              <div class="field">
-                <label for="h_working">هل الجهاز يعمل حاليًا؟ (اختياري)</label>
-                <select id="h_working" name="working">
-                  <option value="">غير محدد</option>
-                  <option value="يعمل جزئيًا">يعمل جزئيًا</option>
-                  <option value="لا يعمل نهائيًا">لا يعمل نهائيًا</option>
-                  <option value="يعمل مع مشاكل">يعمل مع مشاكل</option>
-                </select>
-              </div>
-            </div>
-          </fieldset>
-
-          <!-- تفاصيل العطل -->
-          <fieldset>
-            <legend>📝 تفاصيل العطل</legend>
+<!-- ===================== قسم: التسجيل ===================== -->
+<section class="section section--tint" id="register">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-user-plus"></i> التسجيل المبدئي</span>
+      <h2>سجّل <span class="accent">رغبتك في المشاركة</span></h2>
+      <p>املأ البيانات التالية وسيتم تجهيز طلبك في واتساب لإتمام الإرسال. التسجيل مبدئي ولا يتطلب أي دفع.</p>
+    </div>
+    <div class="reg-wrap reveal">
+      <div class="reg-card">
+        <div class="reg-head">
+          <i class="fa-solid fa-clipboard-user"></i>
+          <div>
+            <h3>نموذج التسجيل المبدئي</h3>
+            <p>تسجيل مبدئي — لا يمثل التزاماً مالياً</p>
+          </div>
+        </div>
+        <div class="reg-body">
+          <form id="regForm" novalidate>
             <div class="form-grid">
               <div class="field full">
-                <label for="h_issue">وصف العطل <span class="req">*</span></label>
-                <textarea id="h_issue" name="issue" required placeholder="اشرح المشكلة بالتفصيل: إمتى بدأت؟ في صوت غريب؟ تسريب؟ رسالة خطأ؟"></textarea>
-                <span class="err">من فضلك اكتب وصف العطل</span>
+                <label for="fullName">الاسم بالكامل <span class="req">*</span></label>
+                <input type="text" id="fullName" name="fullName" placeholder="اكتب اسمك بالكامل" autocomplete="name" required>
+                <span class="err-msg" id="errName">من فضلك اكتب الاسم بالكامل.</span>
+              </div>
+              <div class="field">
+                <label for="phone1">رقم الموبايل الأساسي <span class="req">*</span></label>
+                <input type="tel" id="phone1" name="phone1" placeholder="01xxxxxxxxx" inputmode="numeric" autocomplete="tel" required>
+                <span class="hint">يجب أن يكون الرقم صالحاً للتواصل عبر واتساب.</span>
+                <span class="err-msg" id="errPhone1">أدخل رقم موبايل مصري صحيح (مثال: 01012345678).</span>
+              </div>
+              <div class="field">
+                <label for="phone2">رقم موبايل آخر (اختياري)</label>
+                <input type="tel" id="phone2" name="phone2" placeholder="01xxxxxxxxx" inputmode="numeric">
+                <span class="err-msg" id="errPhone2">الرقم غير صحيح. اتركه فارغاً أو أدخل رقماً مصرياً صحيحاً.</span>
               </div>
               <div class="field full">
-                <label for="h_notes">ملاحظات إضافية (اختياري)</label>
-                <textarea id="h_notes" name="notes" placeholder="أي تفاصيل تانية تحب تضيفها"></textarea>
+                <label>عدد الأسهم التي ترغب في المشاركة بها <span class="req">*</span></label>
+                <div class="stock-picker" id="stockPicker">
+                  <!-- تُملأ ديناميكياً -->
+                </div>
+                <span class="err-msg" id="errStocks">اختر عدد الأسهم.</span>
               </div>
-              <div class="field full">
-                <label for="h_photo">صورة للجهاز أو العطل (اختياري)</label>
-                <input type="file" id="h_photo" name="photo" accept="image/*">
-                <span class="help">الصورة مش بتتبعت تلقائيًا. هتحتاج ترفقها بنفسك في واتساب بعد فتح المحادثة.</span>
+              <div class="total-box">
+                <div class="tl">إجمالي المساهمة المقترحة: <b id="totalLabel">20,000 جنيه</b></div>
+                <div class="tv"><span id="totalValue">20,000</span> <span class="cur">جنيه</span></div>
               </div>
-            </div>
-          </fieldset>
+              <div class="total-note">هذه قيمة تقديرية للمشاركة المقترحة وليست مبلغاً مطلوباً دفعه الآن.</div>
 
-          <!-- عنوان الزيارة -->
-          <fieldset>
-            <legend>📍 عنوان الزيارة</legend>
-            <div class="form-grid">
-              <div class="field">
-                <label for="h_city">المحافظة / المدينة <span class="req">*</span></label>
-                <input type="text" id="h_city" name="city" required value="الإسكندرية" placeholder="المحافظة">
-                <span class="err">من فضلك اكتب المحافظة</span>
-              </div>
-              <div class="field">
-                <label for="h_area">المنطقة <span class="req">*</span></label>
-                <input type="text" id="h_area" name="area" required placeholder="مثال: سيدي بشر">
-                <span class="err">من فضلك اكتب المنطقة</span>
-              </div>
-              <div class="field full">
-                <label for="h_street">الشارع ورقم العقار <span class="req">*</span></label>
-                <input type="text" id="h_street" name="street" required placeholder="مثال: 27 شارع محمد نجيب، عقار 10">
-                <span class="err">من فضلك اكتب الشارع ورقم العقار</span>
-              </div>
-              <div class="field">
-                <label for="h_floor">الدور أو علامة مميزة (اختياري)</label>
-                <input type="text" id="h_floor" name="floor" placeholder="مثال: الدور الثالث، بجوار صيدلية">
+              <label class="consent" id="consentLabel">
+                <input type="checkbox" id="consent" required>
+                <span>أوافق على إرسال بياناتي للتواصل معي بخصوص المشروع، وأفهم أن هذا التسجيل مبدئي ولا يمثل التزاماً مالياً أو تأكيداً لملكية أسهم.</span>
+              </label>
+              <span class="err-msg" id="errConsent" style="grid-column:1/-1">يجب الموافقة على الإقرار قبل التأكيد.</span>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn--green btn--block"><i class="fa-brands fa-whatsapp"></i> تأكيد التسجيل المبدئي</button>
+                <div class="form-note">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  لن يتم دفع أي أموال. سيتم فتح واتساب برسالة مجهزة تحتوي على بياناتك، وتضغط أنت زر الإرسال داخل واتساب.
+                </div>
               </div>
             </div>
-          </fieldset>
+          </form>
 
-          <!-- الموعد -->
-          <fieldset>
-            <legend>📅 الموعد المطلوب</legend>
-            <div class="form-grid">
-              <div class="field">
-                <label for="h_date">التاريخ <span class="req">*</span></label>
-                <input type="date" id="h_date" name="date" required>
-                <span class="err">من فضلك اختار التاريخ</span>
-              </div>
-              <div class="field">
-                <label for="h_time">الوقت المفضل <span class="req">*</span></label>
-                <select id="h_time" name="time" required>
-                  <option value="">اختار الوقت</option>
-                  <option value="صباحًا (9 - 12)">صباحًا (9 - 12)</option>
-                  <option value="ظهرًا (12 - 3)">ظهرًا (12 - 3)</option>
-                  <option value="عصرًا (3 - 6)">عصرًا (3 - 6)</option>
-                  <option value="مساءً (6 - 9)">مساءً (6 - 9)</option>
-                </select>
-                <span class="err">من فضلك اختار الوقت</span>
-              </div>
+          <!-- رسالة النجاح -->
+          <div class="success-box" id="successBox">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <h3>شكراً لاهتمامك بمشروع هايبر اذكر الله</h3>
+            <p>تم تجهيز بيانات تسجيلك المبدئي. يرجى إتمام إرسال الرسالة عبر واتساب.</p>
+            <div class="wa-hint"><i class="fa-brands fa-whatsapp"></i> تم تجهيز طلبك في واتساب. اضغط إرسال داخل واتساب لإتمام إرسال بياناتك.</div>
+            <p>بعد اكتمال العدد المطلوب ودراسة طلبات المشاركة، سيتم التواصل مع المهتمين لتحديد موعد الاجتماع الرسمي، بإذن الله.</p>
+            <p>خلال الاجتماع سيتم عرض تفاصيل المشروع والدراسات والتكاليف والحقوق والالتزامات، ومناقشة الإجراءات القانونية والعقود قبل أي التزام مالي.</p>
+            <div class="copy-area">
+              <label for="copyText" style="display:block;font-weight:800;color:var(--green-900);margin-bottom:8px">نسخة من رسالة التسجيل (للاحتفاظ أو الإرسال يدوياً)</label>
+              <textarea id="copyText" readonly></textarea>
+              <button type="button" class="btn btn--ghost" id="copyBtn" style="background:var(--green-700);border-color:var(--green-700)"><i class="fa-solid fa-copy"></i> نسخ الرسالة</button>
+              <button type="button" class="btn btn--wa" id="reopenWa" style="margin-right:8px"><i class="fa-brands fa-whatsapp"></i> إعادة فتح واتساب</button>
+              <div class="copy-feedback" id="copyFeedback"><i class="fa-solid fa-check"></i> تم نسخ الرسالة إلى الحافظة.</div>
             </div>
-          </fieldset>
-
-          <div class="form-actions">
-            <button type="button" class="btn btn-wa btn-lg" onclick="submitForm('maintenanceFormHome')">
-              📱 إرسال طلب الصيانة عبر واتساب
-            </button>
-            <button type="button" class="btn btn-outline btn-lg" onclick="copyOrder('maintenanceFormHome')">
-              📋 نسخ تفاصيل الطلب
-            </button>
-          </div>
-          <p class="form-note">
-            ⚠️ ملاحظة: إرسال الطلب بيفتح واتساب برسالة مجهزة. لازم تضغط زر الإرسال داخل واتساب بنفسك.<br>
-            الموعد المذكور هو الموعد المفضل ليك، ويحتاج تأكيد من المركز.
-          </p>
-        </form>
-
-        <div class="summary-box" id="summaryHome">
-          <h4>📄 ملخص الطلب — راجعه قبل الإرسال</h4>
-          <pre id="summaryTextHome"></pre>
-          <div class="summary-actions">
-            <button type="button" class="btn btn-wa" onclick="openWhatsApp('maintenanceFormHome')">📱 فتح واتساب وإرسال الطلب</button>
-            <button type="button" class="btn btn-outline" onclick="copyOrder('maintenanceFormHome')">📋 نسخ التفاصيل</button>
-            <button type="button" class="btn btn-outline" onclick="closeSummary('summaryHome')">✏️ تعديل البيانات</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
 
-<!-- ============================================
-     صفحة صيانة الثلاجات
-     ============================================ -->
-<section id="page-fridge" class="page">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="#home" onclick="showPage('home');return false;">الرئيسية</a> › صيانة الثلاجات</div>
-      <h1>❄️ صيانة الثلاجات</h1>
-      <p>فحص وإصلاح شامل لجميع أعطال الثلاجات: التبريد، الكومبروسر، المروحة، الثرموستات، وتسريب المياه.</p>
-    </div>
-  </div>
-
-  <div class="container section">
-    <div class="diagram-wrap">
-      <h2 class="diagram-title">🔍 رسم توضيحي لمكونات الثلاجة</h2>
-      <p class="diagram-note">رسم مبسط يوضح الأجزاء الرئيسية. المكونات تختلف حسب النوع والموديل.</p>
-      <!-- رسم SVG توضيحي للثلاجة -->
-      <svg class="diagram-svg" viewBox="0 0 600 500" role="img" aria-label="رسم توضيحي لمكونات الثلاجة">
-        <!-- جسم الثلاجة -->
-        <rect x="150" y="40" width="300" height="420" rx="12" fill="#e8eef4" stroke="#1c3a5e" stroke-width="3"/>
-        <!-- خط الفصل بين الفريزر والثلاجة -->
-        <line x1="150" y1="170" x2="450" y2="170" stroke="#1c3a5e" stroke-width="3"/>
-        <!-- باب الفريزر -->
-        <rect x="160" y="50" width="280" height="110" rx="8" fill="#d4e0eb" stroke="#1c3a5e" stroke-width="2"/>
-        <text x="300" y="115" text-anchor="middle" font-family="Cairo" font-size="14" fill="#1c3a5e" font-weight="700">الفريزر</text>
-        <!-- باب الثلاجة -->
-        <rect x="160" y="180" width="280" height="270" rx="8" fill="#d4e0eb" stroke="#1c3a5e" stroke-width="2"/>
-        <text x="300" y="325" text-anchor="middle" font-family="Cairo" font-size="14" fill="#1c3a5e" font-weight="700">الثلاجة</text>
-        <!-- أرفف -->
-        <line x1="175" y1="240" x2="425" y2="240" stroke="#1c3a5e" stroke-width="1.5" stroke-dasharray="6 4"/>
-        <line x1="175" y1="300" x2="425" y2="300" stroke="#1c3a5e" stroke-width="1.5" stroke-dasharray="6 4"/>
-        <line x1="175" y1="360" x2="425" y2="360" stroke="#1c3a5e" stroke-width="1.5" stroke-dasharray="6 4"/>
-        <!-- درج -->
-        <rect x="180" y="370" width="240" height="40" rx="6" fill="#b8c9d8" stroke="#1c3a5e" stroke-width="1.5"/>
-        <text x="300" y="395" text-anchor="middle" font-family="Cairo" font-size="11" fill="#1c3a5e">درج الخضروات</text>
-        <!-- ضاغط -->
-        <rect x="470" y="380" width="90" height="70" rx="10" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <circle cx="515" cy="415" r="20" fill="none" stroke="#fff" stroke-width="3"/>
-        <text x="515" y="420" text-anchor="middle" font-family="Cairo" font-size="11" fill="#fff" font-weight="700">ضاغط</text>
-        <!-- أرقام المكونات -->
-        <circle cx="170" cy="155" r="13" fill="#d32f2f"/><text x="170" y="160" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">1</text>
-        <circle cx="440" cy="100" r="13" fill="#d32f2f"/><text x="440" y="105" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">2</text>
-        <circle cx="440" cy="270" r="13" fill="#d32f2f"/><text x="440" y="275" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">3</text>
-        <circle cx="440" cy="390" r="13" fill="#d32f2f"/><text x="440" y="395" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">4</text>
-        <circle cx="515" cy="370" r="13" fill="#d32f2f"/><text x="515" y="375" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">5</text>
-        <circle cx="300" cy="370" r="13" fill="#d32f2f"/><text x="300" y="375" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">6</text>
-      </svg>
-      <p class="diagram-note" style="margin-top:10px;">المكونات: 1- جوان الباب، 2- مروحة المبخر، 3- حساس الحرارة / ثرموستات، 4- مجرى التصريف، 5- الضاغط (الكومبروسر)، 6- درج الخضروات. المكونات تختلف حسب الموديل.</p>
-    </div>
-
-    <h2 class="section-title">المكونات الفنية الرئيسية</h2>
-    <p class="section-sub">شرح مبسط لأهم أجزاء الثلاجة ووظائفها والأعراض المحتملة عند تعطلها</p>
-    <div class="parts-grid">
-      <div class="part-card"><span class="num">1</span><h4>الضاغط (الكومبروسر)</h4><span class="en">Compressor</span>
-        <ul><li>مكانه: أسفل أو خلف الثلاجة</li><li>وظيفته: ضغط غاز التبريد لتحريكه في الدائرة</li></ul>
-        <p><strong>أعراض تلفه:</strong> الثلاجة لا تبرد نهائيًا، صوت طقطقة، سخونة زائدة. <strong>احتمالات أخرى:</strong> نقص غاز، انسداد كابل شعر، تلف الثرموستات.</p>
+<!-- ===================== قسم: الشفافية القانونية ===================== -->
+<section class="section" id="legal">
+  <div class="container">
+    <div class="legal-grid">
+      <div class="legal-copy reveal">
+        <span class="eyebrow"><i class="fa-solid fa-scale-balanced"></i> الشفافية</span>
+        <h2>الوضوح والثقة <span class="accent">أساس البداية</span></h2>
+        <p>
+          نؤمن أن تأسيس كيان تجاري كبير يحتاج إلى وضوح في جميع التفاصيل، ولذلك فإن المرحلة الحالية مخصصة لمعرفة حجم الاهتمام بالمشروع والتواصل مع الراغبين في معرفة التفاصيل.
+        </p>
+        <p>
+          بعد تقييم حجم الإقبال واستكمال الدراسات اللازمة، سيتم العمل مع المختصين على استكمال الإجراءات القانونية، وتحديد الشكل القانوني للشركة، وإعداد العقود التي توضح حقوق والتزامات جميع الأطراف، وآلية الإدارة والرقابة وتوزيع الأرباح إن تقرر ذلك وفق المستندات النهائية.
+        </p>
       </div>
-      <div class="part-card"><span class="num">2</span><h4>المكثف</h4><span class="en">Condenser</span>
-        <ul><li>مكانه: خلف الثلاجة أو على الجانبين</li><li>وظيفته: طرد الحرارة من غاز التبريد</li></ul>
-        <p><strong>أعراض تلفه:</strong> ضعف تبريد، سخونة غير طبيعية. <strong>احتمالات أخرى:</strong> تراكم أتربة، مروحة مكثف ضعيفة.</p>
-      </div>
-      <div class="part-card"><span class="num">3</span><h4>المبخر</h4><span class="en">Evaporator</span>
-        <ul><li>مكانه: داخل الفريزر أو الثلاجة</li><li>وظيفته: امتصاص الحرارة وتبريد الهواء</li></ul>
-        <p><strong>أعراض تلفه:</strong> تراكم ثلج غير طبيعي، ضعف تبريد. <strong>احتمالات أخرى:</strong> عطل سخان إذابة الثلج، مشكلة في المروحة.</p>
-      </div>
-      <div class="part-card"><span class="num">4</span><h4>مروحة المبخر</h4><span class="en">Evaporator Fan</span>
-        <ul><li>مكانه: خلف المبخر داخل الفريزر</li><li>وظيفته: توزيع الهواء البارد</li></ul>
-        <p><strong>أعراض تلفها:</strong> الفريزر يبرد والثلاجة لا، صوت غير معتاد. <strong>احتمالات أخرى:</strong> انسداد فتحات الهواء، تلف حساس.</p>
-      </div>
-      <div class="part-card"><span class="num">5</span><h4>لوحة التحكم</h4><span class="en">Control Board</span>
-        <ul><li>مكانه: داخل الباب أو خلفه</li><li>وظيفته: التحكم في تشغيل وإيقاف المكونات</li></ul>
-        <p><strong>أعراض تلفها:</strong> رموز خطأ، فشل تشغيل، سلوك غير متوقع. <strong>احتمالات أخرى:</strong> مشكلة في الحساسات، تلف أسلاك.</p>
-      </div>
-      <div class="part-card"><span class="num">6</span><h4>حساس الحرارة / ثرموستات</h4><span class="en">Thermostat / Sensor</span>
-        <ul><li>مكانه: داخل الثلاجة أو الفريزر</li><li>وظيفته: قياس درجة الحرارة وإعطاء أوامر التشغيل</li></ul>
-        <p><strong>أعراض تلفه:</strong> تبريد زائد أو ضعيف، فصل وتشغيل متكرر. <strong>احتمالات أخرى:</strong> مشكلة في لوحة التحكم، تلف الضاغط.</p>
-      </div>
-      <div class="part-card"><span class="num">7</span><h4>سخان إذابة الثلج</h4><span class="en">Defrost Heater</span>
-        <ul><li>مكانه: حول المبخر</li><li>وظيفته: إذابة الثلج المتكون على المبخر</li></ul>
-        <p><strong>أعراض تلفه:</strong> تراكم ثلج شديد، ضعف تبريد الثلاجة. <strong>احتمالات أخرى:</strong> تلف الثرموديسك، عطل المؤقت.</p>
-      </div>
-      <div class="part-card"><span class="num">8</span><h4>مجرى تصريف المياه</h4><span class="en">Drain Tube</span>
-        <ul><li>مكانه: أسفل المبخر</li><li>وظيفته: تصريف ماء إذابة الثلج</li></ul>
-        <p><strong>أعراض انسداده:</strong> تسريب مياه داخل الثلاجة أو تحتها. <strong>احتمالات أخرى:</strong> تراكم أتربة، تلف عزل.</p>
-      </div>
-      <div class="part-card"><span class="num">9</span><h4>جوان الباب</h4><span class="en">Door Gasket</span>
-        <ul><li>مكانه: محيط باب الثلاجة والفريزر</li><li>وظيفته: منع تسرب الهواء البارد</li></ul>
-        <p><strong>أعراض تلفه:</strong> ضعف تبريد، تراكم ثلج على الجوانب، تسريب هواء. <strong>احتمالات أخرى:</strong> مشكلة في المفصلات، عدم استواء الباب.</p>
-      </div>
-      <div class="part-card"><span class="num">10</span><h4>صمام المياه (إن وجد)</h4><span class="en">Water Inlet Valve</span>
-        <ul><li>مكانه: خلف الثلاجة عند وجود صانع ثلج</li><li>وظيفته: إمداد صانع الثلج بالمياه</li></ul>
-        <p><strong>أعراض تلفه:</strong> تسريب مياه، عدم عمل صانع الثلج. <strong>احتمالات أخرى:</strong> انسداد فلتر المياه، مشكلة في الصمام نفسه.</p>
-      </div>
-    </div>
-
-    <h2 class="section-title" style="margin-top:48px;">أعطال الثلاجات الشائعة</h2>
-    <p class="section-sub">الأعراض والأسباب المحتملة — التشخيص النهائي يحتاج فحص فني</p>
-    <div class="faults-grid">
-      <div class="fault-card"><h4>❌ الثلاجة لا تعمل</h4><p>احتمالات: انقطاع كهرباء، تلف فيشة أو سلك، عطل لوحة تحكم، تلف ضاغط. الفحص: قياس الكهرباء، فحص الأسلاك واللوحة.</p></div>
-      <div class="fault-card"><h4>🌡️ الثلاجة تعمل ولا تبرد جيدًا</h4><p>احتمالات: نقص غاز، انسداد كابل شعر، تلف مروحة، تراكم ثلج على المبخر. الفحص: فحص ضغط الغاز، تنظيف المكثف، فحص المروحة.</p></div>
-      <div class="fault-card"><h4>❄️ الفريزر يبرد والثلاجة لا</h4><p>احتمالات: تلف مروحة المبخر، انسداد فتحات الهواء، تراكم ثلج. الفحص: فحص المروحة، تنظيف مجرى الهواء.</p></div>
-      <div class="fault-card"><h4>🧊 تراكم ثلج غير طبيعي</h4><p>احتمالات: تلف سخان إذابة الثلج، عطل الثرموديسك، تلف المؤقت. الفحص: فحص دائرة الإذابة كاملة.</p></div>
-      <div class="fault-card"><h4>💧 تسريب مياه</h4><p>احتمالات: انسداد مجرى التصريف، تلف جوان الباب، انسداد فلتر المياه. الفحص: تنظيف المجرى، فحص الجوان.</p></div>
-      <div class="fault-card"><h4>🔊 أصوات غير معتادة</h4><p>احتمالات: تلف مروحة، تلف ضاغط، اهتزاز الثلاجة. الفحص: فحص المراوح والضاغط، ضبط أرجل الثلاجة.</p></div>
-      <div class="fault-card"><h4>🔄 فصل وتشغيل متكرر</h4><p>احتمالات: تلف ثرموستات، ضعف عزل، تلف ضاغط. الفحص: فحص الحساسات والضاغط.</p></div>
-      <div class="fault-card"><h4>🛑 توقف المروحة</h4><p>احتمالات: تلف المروحة، انسداد، مشكلة كهربائية. الفحص: قياس الكهرباء الواصلة للمروحة.</p></div>
-      <div class="fault-card"><h4>⚠️ ظهور رمز خطأ</h4><p>الرموز تختلف حسب الماركة. اكتب الرمز في طلب الصيانة وسيقوم الفني بتفسيره حسب الموديل.</p></div>
-    </div>
-
-    <!-- نموذج طلب صيانة الثلاجات -->
-    <div class="form-wrap" style="margin-top:40px;">
-      <h3>اطلب صيانة ثلاجة</h3>
-      <p class="hint">نوع الجهاز محدد مسبقًا: ثلاجة</p>
-      <form id="maintenanceFormFridge" novalidate>
-        <input type="hidden" name="source" value="صفحة الثلاجات">
-        <fieldset>
-          <legend>👤 بيانات العميل</legend>
-          <div class="form-grid">
-            <div class="field"><label>اسم العميل <span class="req">*</span></label><input type="text" name="name" required placeholder="اكتب اسمك"><span class="err">مطلوب</span></div>
-            <div class="field"><label>رقم الموبايل <span class="req">*</span></label><input type="tel" name="phone" required placeholder="01xxxxxxxxx" dir="ltr"><span class="err">رقم غير صحيح</span></div>
-            <div class="field"><label>رقم بديل (اختياري)</label><input type="tel" name="phone2" placeholder="رقم إضافي" dir="ltr"></div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>🔧 بيانات الجهاز</legend>
-          <div class="form-grid">
-            <div class="field"><label>نوع الجهاز</label><input type="text" name="device" value="ثلاجة" readonly style="background:#eef1f4;"></div>
-            <div class="field"><label>الماركة (اختياري)</label><input type="text" name="brand" placeholder="توشيبا، LG..."></div>
-            <div class="field"><label>الموديل (اختياري)</label><input type="text" name="model" placeholder="رقم الموديل"></div>
-            <div class="field"><label>حالة الجهاز</label><select name="working"><option value="">غير محدد</option><option>يعمل جزئيًا</option><option>لا يعمل نهائيًا</option><option>يعمل مع مشاكل</option></select></div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>📝 تفاصيل العطل</legend>
-          <div class="form-grid">
-            <div class="field full"><label>وصف العطل <span class="req">*</span></label><textarea name="issue" required placeholder="اشرح المشكلة بالتفصيل"></textarea><span class="err">مطلوب</span></div>
-            <div class="field full"><label>ملاحظات إضافية</label><textarea name="notes" placeholder="أي تفاصيل إضافية"></textarea></div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>📍 عنوان الزيارة</legend>
-          <div class="form-grid">
-            <div class="field"><label>المحافظة <span class="req">*</span></label><input type="text" name="city" required value="الإسكندرية"><span class="err">مطلوب</span></div>
-            <div class="field"><label>المنطقة <span class="req">*</span></label><input type="text" name="area" required placeholder="سيدي بشر"><span class="err">مطلوب</span></div>
-            <div class="field full"><label>الشارع ورقم العقار <span class="req">*</span></label><input type="text" name="street" required placeholder="27 شارع محمد نجيب، عقار 10"><span class="err">مطلوب</span></div>
-            <div class="field"><label>الدور أو علامة مميزة</label><input type="text" name="floor" placeholder="الدور الثالث"></div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>📅 الموعد</legend>
-          <div class="form-grid">
-            <div class="field"><label>التاريخ <span class="req">*</span></label><input type="date" name="date" required><span class="err">مطلوب</span></div>
-            <div class="field"><label>الوقت <span class="req">*</span></label><select name="time" required><option value="">اختار</option><option>صباحًا (9-12)</option><option>ظهرًا (12-3)</option><option>عصرًا (3-6)</option><option>مساءً (6-9)</option></select><span class="err">مطلوب</span></div>
-          </div>
-        </fieldset>
-        <div class="form-actions">
-          <button type="button" class="btn btn-wa btn-lg" onclick="submitForm('maintenanceFormFridge')">📱 إرسال عبر واتساب</button>
-          <button type="button" class="btn btn-outline btn-lg" onclick="copyOrder('maintenanceFormFridge')">📋 نسخ التفاصيل</button>
+      <div class="legal-card reveal">
+        <h3><i class="fa-solid fa-circle-check"></i> مبادئنا في هذه المرحلة</h3>
+        <ul class="legal-list">
+          <li><i class="fa-solid fa-check"></i> لا يتم تحصيل أموال في مرحلة التسجيل المبدئي.</li>
+          <li><i class="fa-solid fa-check"></i> لا تنشر وعوداً بعوائد أو أرباح مضمونة.</li>
+          <li><i class="fa-solid fa-check"></i> لا يُعرض أي شخص على أنه أصبح مساهماً أو مالكاً قبل إتمام الإجراءات القانونية ذات الصلة.</li>
+          <li><i class="fa-solid fa-check"></i> جميع التفاصيل النهائية تخضع للدراسات والموافقات والعقود المعتمدة.</li>
+        </ul>
+        <div class="legal-warn">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          المعلومات المعروضة تعريفية ومبدئية، والمشاركة النهائية تخضع للدراسات والموافقات والإجراءات القانونية والعقود المعتمدة.
         </div>
-      </form>
-      <div class="summary-box" id="summaryFridge"><h4>📄 ملخص الطلب</h4><pre id="summaryTextFridge"></pre>
-        <div class="summary-actions"><button type="button" class="btn btn-wa" onclick="openWhatsApp('maintenanceFormFridge')">📱 فتح واتساب</button><button type="button" class="btn btn-outline" onclick="copyOrder('maintenanceFormFridge')">📋 نسخ</button><button type="button" class="btn btn-outline" onclick="closeSummary('summaryFridge')">✏️ تعديل</button></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     صفحة صيانة الغسالات
-     ============================================ -->
-<section id="page-washer" class="page">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="#home" onclick="showPage('home');return false;">الرئيسية</a> › صيانة الغسالات</div>
-      <h1>🌀 صيانة الغسالات</h1>
-      <p>إصلاح جميع أعطال الغسالات: الصرف، العصر، الاهتزاز، تسريب المياه، وأعطال لوحة التحكم.</p>
+<!-- ===================== قسم: الأسئلة الشائعة ===================== -->
+<section class="section section--tint" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</span>
+      <h2>أسئلة قد <span class="accent">تساعدك</span></h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">هل أستطيع المشاركة بمبلغ 20 ألف جنيه؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">المشاركة المقترحة تبدأ من قيمة سهم واحد، وهي 20 ألف جنيه، وتخضع التفاصيل النهائية للإجراءات القانونية.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">هل يجب أن أدفع عند التسجيل؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">لا. التسجيل الحالي مبدئي للتعبير عن الرغبة فقط، ولا يتطلب دفع أي أموال.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">هل التسجيل يعني أنني أصبحت شريكاً؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">لا. التسجيل لا ينشئ ملكية أو أسهماً قانونية. ذلك لا يتم إلا بعد استكمال الإجراءات والعقود المعتمدة.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">أين سيبدأ المشروع؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">نبدأ التخطيط من الإسكندرية، مع تصور لإنشاء هايبر ماركت رئيسي ومخزن مركزي وفروع متعددة، ثم التوسع تدريجياً.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">متى سيتم التواصل معي؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">بعد مراجعة طلبات التسجيل وتقييم حجم الإقبال، سيتم التواصل مع المهتمين لتحديد موعد الاجتماع الرسمي.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">هل الأرباح مضمونة؟ <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="faq-a">لا توجد أرباح مضمونة. نتائج أي مشروع تجاري ترتبط بالتنفيذ والتكاليف وظروف السوق، وسيتم عرض التفاصيل والدراسات المتاحة بشفافية.</div>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="container section">
-    <div class="diagram-wrap">
-      <h2 class="diagram-title">🔍 رسم توضيحي لمكونات الغسالة</h2>
-      <p class="diagram-note">رسم مبسط يوضح الأجزاء الرئيسية. المكونات تختلف حسب النوع (أمامية / علوية) والموديل.</p>
-      <svg class="diagram-svg" viewBox="0 0 600 500" role="img" aria-label="رسم توضيحي لمكونات الغسالة">
-        <!-- جسم الغسالة -->
-        <rect x="140" y="40" width="320" height="420" rx="14" fill="#e8eef4" stroke="#1c3a5e" stroke-width="3"/>
-        <!-- الباب -->
-        <circle cx="300" cy="250" r="85" fill="#d4e0eb" stroke="#1c3a5e" stroke-width="3"/>
-        <circle cx="300" cy="250" r="60" fill="#b8c9d8" stroke="#1c3a5e" stroke-width="2"/>
-        <text x="300" y="255" text-anchor="middle" font-family="Cairo" font-size="12" fill="#1c3a5e" font-weight="700">الحلة</text>
-        <!-- لوحة التحكم -->
-        <rect x="170" y="55" width="260" height="50" rx="8" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <text x="300" y="87" text-anchor="middle" font-family="Cairo" font-size="13" fill="#fff" font-weight="700">لوحة التحكم</text>
-        <!-- درج المسحوق -->
-        <rect x="170" y="120" width="260" height="30" rx="6" fill="#d4e0eb" stroke="#1c3a5e" stroke-width="1.5"/>
-        <text x="300" y="140" text-anchor="middle" font-family="Cairo" font-size="11" fill="#1c3a5e">درج المسحوق</text>
-        <!-- طلمبة الصرف -->
-        <rect x="470" y="380" width="90" height="60" rx="10" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <text x="515" y="415" text-anchor="middle" font-family="Cairo" font-size="10" fill="#fff" font-weight="700">طلمبة صرف</text>
-        <!-- أرقام -->
-        <circle cx="155" cy="85" r="13" fill="#d32f2f"/><text x="155" y="90" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">1</text>
-        <circle cx="155" cy="135" r="13" fill="#d32f2f"/><text x="155" y="140" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">2</text>
-        <circle cx="300" cy="400" r="13" fill="#d32f2f"/><text x="300" y="405" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">3</text>
-        <circle cx="515" cy="370" r="13" fill="#d32f2f"/><text x="515" y="375" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">4</text>
-        <circle cx="155" cy="300" r="13" fill="#d32f2f"/><text x="155" y="305" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">5</text>
-      </svg>
-      <p class="diagram-note" style="margin-top:10px;">المكونات: 1- لوحة التحكم، 2- درج المسحوق، 3- الحلة الداخلية، 4- طلمبة الصرف، 5- صمام دخول المياه. المكونات تختلف حسب الموديل.</p>
+<!-- ===================== قسم: التواصل ===================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-address-card"></i> التواصل</span>
+      <h2>صاحب <span class="accent">فكرة المشروع</span></h2>
     </div>
-
-    <h2 class="section-title">المكونات الفنية الرئيسية</h2>
-    <div class="parts-grid">
-      <div class="part-card"><span class="num">1</span><h4>المحرك</h4><span class="en">Motor</span><ul><li>مكانه: أسفل الحلة</li><li>وظيفته: تدوير الحلة للغسيل والعصر</li></ul><p><strong>أعراض تلفه:</strong> الغسالة لا تدور، صوت طنين بدون حركة. <strong>احتمالات أخرى:</strong> تلف السير، تلف كابستور، مشكلة في لوحة التحكم.</p></div>
-      <div class="part-card"><span class="num">2</span><h4>الحلة الداخلية</h4><span class="en">Inner Drum</span><ul><li>مكانه: داخل الخزان</li><li>وظيفته: احتواء الملابس ودورانها</li></ul><p><strong>أعراض تلفها:</strong> ضوضاء عالية، تلف الملابس. <strong>احتمالات أخرى:</strong> تلف رولمان البلي، تلف المساعدين.</p></div>
-      <div class="part-card"><span class="num">3</span><h4>الخزان الخارجي</h4><span class="en">Outer Tub</span><ul><li>مكانه: يحيط بالحلة</li><li>وظيفته: احتواء المياه</li></ul><p><strong>أعراض تلفه:</strong> تسريب مياه. <strong>احتمالات أخرى:</strong> تلف جوان، انسداد.</p></div>
-      <div class="part-card"><span class="num">4</span><h4>رولمان البلي</h4><span class="en">Bearing</span><ul><li>مكانه: عمود الحلة</li><li>وظيفته: تسهيل دوران الحلة</li></ul><p><strong>أعراض تلفه:</strong> ضوضاء عالية أثناء العصر، اهتزاز. <strong>احتمالات أخرى:</strong> تلف الحلة، عدم توازن.</p></div>
-      <div class="part-card"><span class="num">5</span><h4>طلمبة الصرف</h4><span class="en">Drain Pump</span><ul><li>مكانه: أسفل الغسالة</li><li>وظيفته: طرد المياه</li></ul><p><strong>أعراض تلفها:</strong> الغسالة لا تصرف، مياه باقية. <strong>احتمالات أخرى:</strong> انسداد فلتر، انسداد خرطوم.</p></div>
-      <div class="part-card"><span class="num">6</span><h4>صمام دخول المياه</h4><span class="en">Inlet Valve</span><ul><li>مكانه: خلف الغسالة</li><li>وظيفته: التحكم في دخول المياه</li></ul><p><strong>أعراض تلفه:</strong> الغسالة لا تسحب مياه، تسريب. <strong>احتمالات أخرى:</strong> انسداد فلتر، ضعف ضغط المياه.</p></div>
-      <div class="part-card"><span class="num">7</span><h4>حساس مستوى المياه</h4><span class="en">Pressure Switch</span><ul><li>مكانه: داخل لوحة التحكم</li><li>وظيفته: قياس كمية المياه</li></ul><p><strong>أعراض تلفه:</strong> سحب مياه زائد أو ناقص، توقف البرنامج. <strong>احتمالات أخرى:</strong> انسداد خرطوم الضغط.</p></div>
-      <div class="part-card"><span class="num">8</span><h4>لوحة التحكم</h4><span class="en">Control Board</span><ul><li>مكانه: أعلى الغسالة</li><li>وظيفته: إدارة جميع البرامج</li></ul><p><strong>أعراض تلفها:</strong> رموز خطأ، عدم استجابة. <strong>احتمالات أخرى:</strong> مشكلة في الحساسات، تلف أزرار.</p></div>
-      <div class="part-card"><span class="num">9</span><h4>قفل الباب</h4><span class="en">Door Lock</span><ul><li>مكانه: باب الغسالة الأمامية</li><li>وظيفته: تأمين الباب أثناء التشغيل</li></ul><p><strong>أعراض تلفه:</strong> الباب لا يفتح، الغسالة لا تبدأ. <strong>احتمالات أخرى:</strong> مشكلة في لوحة التحكم.</p></div>
-      <div class="part-card"><span class="num">10</span><h4>المساعدين / النوابض</h4><span class="en">Suspension Springs</span><ul><li>مكانه: حول الخزان</li><li>وظيفته: امتصاص الاهتزاز</li></ul><p><strong>أعراض تلفها:</strong> اهتزاز شديد أثناء العصر. <strong>احتمالات أخرى:</strong> عدم توازن الحلة، تلف رولمان.</p></div>
-      <div class="part-card"><span class="num">11</span><h4>السخان (إن وجد)</h4><span class="en">Heating Element</span><ul><li>مكانه: أسفل الخزان</li><li>وظيفته: تسخين المياه</li></ul><p><strong>أعراض تلفه:</strong> الغسيل البارد فقط، رموز خطأ. <strong>احتمالات أخرى:</strong> تلف حساس الحرارة.</p></div>
-    </div>
-
-    <h2 class="section-title" style="margin-top:48px;">أعطال الغسالات الشائعة</h2>
-    <div class="faults-grid">
-      <div class="fault-card"><h4>🛑 الغسالة لا تبدأ</h4><p>احتمالات: قفل الباب تالف، لوحة تحكم معطلة، فيوز محروق. الفحص: فحص الكهرباء واللوحة والقفل.</p></div>
-      <div class="fault-card"><h4>💧 لا تسحب مياه</h4><p>احتمالات: صمام دخول تالف، انسداد فلتر، ضعف ضغط المياه. الفحص: تنظيف الفلتر، فحص الصمام.</p></div>
-      <div class="fault-card"><h4>🚰 لا تصرف مياه</h4><p>احتمالات: طلمبة صرف تالفة، انسداد فلتر أو خرطوم. الفحص: تنظيف الفلتر، فحص الطلمبة.</p></div>
-      <div class="fault-card"><h4>🌀 لا تعصر</h4><p>احتمالات: تلف المحرك، تلف السير، مشكلة في لوحة التحكم. الفحص: فحص المحرك والسير.</p></div>
-      <div class="fault-card"><h4>📳 اهتزاز شديد</h4><p>احتمالات: تلف المساعدين، عدم توازن، تلف رولمان. الفحص: فحص المساعدين وتوازن الحلة.</p></div>
-      <div class="fault-card"><h4>💦 تسريب مياه</h4><p>احتمالات: تلف جوان الباب، تلف خرطوم، تلف الخزان. الفحص: فحص الجوان والخراطيم.</p></div>
-      <div class="fault-card"><h4>🔊 صوت غير طبيعي</h4><p>احتمالات: تلف رولمان، وجود جسم غريب، تلف المحرك. الفحص: فحص الحلة والرولمان.</p></div>
-      <div class="fault-card"><h4>⏸️ توقف البرنامج</h4><p>احتمالات: مشكلة في لوحة التحكم، تلف حساس، انسداد. الفحص: فحص اللوحة والحساسات.</p></div>
-      <div class="fault-card"><h4>⚠️ رمز خطأ</h4><p>الرموز تختلف حسب الماركة. اكتب الرمز في طلب الصيانة وسيفسره الفني حسب الموديل.</p></div>
-    </div>
-
-    <div class="form-wrap" style="margin-top:40px;">
-      <h3>اطلب صيانة غسالة</h3>
-      <p class="hint">نوع الجهاز محدد مسبقًا: غسالة</p>
-      <form id="maintenanceFormWasher" novalidate>
-        <input type="hidden" name="source" value="صفحة الغسالات">
-        <fieldset><legend>👤 بيانات العميل</legend><div class="form-grid">
-          <div class="field"><label>اسم العميل <span class="req">*</span></label><input type="text" name="name" required placeholder="اكتب اسمك"><span class="err">مطلوب</span></div>
-          <div class="field"><label>رقم الموبايل <span class="req">*</span></label><input type="tel" name="phone" required placeholder="01xxxxxxxxx" dir="ltr"><span class="err">رقم غير صحيح</span></div>
-          <div class="field"><label>رقم بديل (اختياري)</label><input type="tel" name="phone2" placeholder="رقم إضافي" dir="ltr"></div>
-        </div></fieldset>
-        <fieldset><legend>🔧 بيانات الجهاز</legend><div class="form-grid">
-          <div class="field"><label>نوع الجهاز</label><input type="text" name="device" value="غسالة" readonly style="background:#eef1f4;"></div>
-          <div class="field"><label>الماركة (اختياري)</label><input type="text" name="brand" placeholder="LG، سامسونج..."></div>
-          <div class="field"><label>الموديل (اختياري)</label><input type="text" name="model" placeholder="رقم الموديل"></div>
-          <div class="field"><label>حالة الجهاز</label><select name="working"><option value="">غير محدد</option><option>يعمل جزئيًا</option><option>لا يعمل نهائيًا</option><option>يعمل مع مشاكل</option></select></div>
-        </div></fieldset>
-        <fieldset><legend>📝 تفاصيل العطل</legend><div class="form-grid">
-          <div class="field full"><label>وصف العطل <span class="req">*</span></label><textarea name="issue" required placeholder="اشرح المشكلة بالتفصيل"></textarea><span class="err">مطلوب</span></div>
-          <div class="field full"><label>ملاحظات إضافية</label><textarea name="notes" placeholder="أي تفاصيل إضافية"></textarea></div>
-        </div></fieldset>
-        <fieldset><legend>📍 عنوان الزيارة</legend><div class="form-grid">
-          <div class="field"><label>المحافظة <span class="req">*</span></label><input type="text" name="city" required value="الإسكندرية"><span class="err">مطلوب</span></div>
-          <div class="field"><label>المنطقة <span class="req">*</span></label><input type="text" name="area" required placeholder="سيدي بشر"><span class="err">مطلوب</span></div>
-          <div class="field full"><label>الشارع ورقم العقار <span class="req">*</span></label><input type="text" name="street" required placeholder="27 شارع محمد نجيب، عقار 10"><span class="err">مطلوب</span></div>
-          <div class="field"><label>الدور أو علامة مميزة</label><input type="text" name="floor" placeholder="الدور الثالث"></div>
-        </div></fieldset>
-        <fieldset><legend>📅 الموعد</legend><div class="form-grid">
-          <div class="field"><label>التاريخ <span class="req">*</span></label><input type="date" name="date" required><span class="err">مطلوب</span></div>
-          <div class="field"><label>الوقت <span class="req">*</span></label><select name="time" required><option value="">اختار</option><option>صباحًا (9-12)</option><option>ظهرًا (12-3)</option><option>عصرًا (3-6)</option><option>مساءً (6-9)</option></select><span class="err">مطلوب</span></div>
-        </div></fieldset>
-        <div class="form-actions">
-          <button type="button" class="btn btn-wa btn-lg" onclick="submitForm('maintenanceFormWasher')">📱 إرسال عبر واتساب</button>
-          <button type="button" class="btn btn-outline btn-lg" onclick="copyOrder('maintenanceFormWasher')">📋 نسخ التفاصيل</button>
+    <div class="contact-wrap reveal">
+      <div class="contact-visual">
+        <div class="avatar">
+          <img src="https://i.postimg.cc/VNrzBYk1/wael.jpg" alt="وائل الخطيب — صاحب فكرة المشروع" loading="lazy" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=&quot;fa-solid fa-user&quot; style=&quot;font-size:44px;color:#f0d27a&quot;></i>'">
         </div>
-      </form>
-      <div class="summary-box" id="summaryWasher"><h4>📄 ملخص الطلب</h4><pre id="summaryTextWasher"></pre>
-        <div class="summary-actions"><button type="button" class="btn btn-wa" onclick="openWhatsApp('maintenanceFormWasher')">📱 فتح واتساب</button><button type="button" class="btn btn-outline" onclick="copyOrder('maintenanceFormWasher')">📋 نسخ</button><button type="button" class="btn btn-outline" onclick="closeSummary('summaryWasher')">✏️ تعديل</button></div>
+        <strong>وائل الخطيب</strong>
+        <span class="role">صاحب فكرة مشروع هايبر اذكر الله</span>
+      </div>
+      <div class="contact-body">
+        <h3>للاستفسار عن المشروع</h3>
+        <p>للاستفسار عن فكرة مشروع هايبر اذكر الله، يمكنك تسجيل بياناتك من خلال الموقع أو التواصل عبر واتساب.</p>
+        <div class="wa-line"><i class="fa-brands fa-whatsapp"></i> <span>01224324243</span></div>
+        <a href="https://wa.me/201224324243?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%87%D8%A7%D9%8A%D8%A8%D8%B1%20%D8%A7%D8%B0%D9%83%D8%B1%20%D8%A7%D9%84%D9%84%D9%87" target="_blank" rel="noopener" class="btn btn--wa"><i class="fa-brands fa-whatsapp"></i> تواصل مباشر عبر واتساب</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================
-     صفحة صيانة البوتاجازات
-     ============================================ -->
-<section id="page-cooker" class="page">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="#home" onclick="showPage('home');return false;">الرئيسية</a> › صيانة البوتاجازات</div>
-      <h1>🔥 صيانة البوتاجازات</h1>
-      <p>إصلاح الشعلات، الإشعال، الفرن، وحل مشاكل الحرارة والإغلاق — بأمان تام.</p>
-    </div>
-  </div>
-
-  <div class="container section">
-    <div class="diagram-wrap">
-      <h2 class="diagram-title">🔍 رسم توضيحي لمكونات البوتاجاز</h2>
-      <p class="diagram-note">رسم مبسط يوضح الأجزاء الرئيسية. المكونات تختلف حسب النوع والموديل.</p>
-      <svg class="diagram-svg" viewBox="0 0 600 500" role="img" aria-label="رسم توضيحي لمكونات البوتاجاز">
-        <!-- جسم البوتاجاز -->
-        <rect x="100" y="100" width="400" height="320" rx="12" fill="#e8eef4" stroke="#1c3a5e" stroke-width="3"/>
-        <!-- سطح البوتاجاز -->
-        <rect x="100" y="100" width="400" height="80" rx="12" fill="#b8c9d8" stroke="#1c3a5e" stroke-width="2"/>
-        <!-- الشعلات -->
-        <circle cx="180" cy="140" r="28" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <circle cx="300" cy="140" r="28" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <circle cx="420" cy="140" r="28" fill="#0f9b8e" stroke="#0b7c72" stroke-width="2"/>
-        <text x="180" y="145" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">شعلة</text>
-        <text x="300" y="145" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">شعلة</text>
-        <text x="420" y="145" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">شعلة</text>
-        <!-- الفرن -->
-        <rect x="130" y="200" width="340" height="200" rx="8" fill="#d4e0eb" stroke="#1c3a5e" stroke-width="2"/>
-        <text x="300" y="305" text-anchor="middle" font-family="Cairo" font-size="16" fill="#1c3a5e" font-weight="700">الفرن</text>
-        <!-- باب الفرن -->
-        <rect x="150" y="220" width="300" height="160" rx="6" fill="#b8c9d8" stroke="#1c3a5e" stroke-width="1.5"/>
-        <text x="300" y="305" text-anchor="middle" font-family="Cairo" font-size="13" fill="#1c3a5e">باب الفرن</text>
-        <!-- مفاتيح التحكم -->
-        <circle cx="160" cy="115" r="12" fill="#d32f2f"/><text x="160" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">1</text>
-        <circle cx="220" cy="115" r="12" fill="#d32f2f"/><text x="220" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">2</text>
-        <circle cx="280" cy="115" r="12" fill="#d32f2f"/><text x="280" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">3</text>
-        <circle cx="340" cy="115" r="12" fill="#d32f2f"/><text x="340" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">4</text>
-        <circle cx="400" cy="115" r="12" fill="#d32f2f"/><text x="400" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">5</text>
-        <circle cx="440" cy="115" r="12" fill="#d32f2f"/><text x="440" y="120" text-anchor="middle" font-size="9" fill="#fff" font-weight="900">6</text>
-      </svg>
-      <p class="diagram-note" style="margin-top:10px;">المكونات: 1-6 مفاتيح التحكم والإشعال، الشعلات، الفرن، باب الفرن. المكونات تختلف حسب الموديل.</p>
-    </div>
-
-    <h2 class="section-title">المكونات الفنية الرئيسية</h2>
-    <div class="parts-grid">
-      <div class="part-card"><span class="num">1</span><h4>الشعلات</h4><span class="en">Burners</span><ul><li>مكانه: سطح البوتاجاز</li><li>وظيفته: إنتاج اللهب للطهي</li></ul><p><strong>أعراض تلفها:</strong> شعلة لا تعمل، لهب ضعيف أو غير منتظم. <strong>احتمالات أخرى:</strong> انسداد فتحات، مشكلة في صمام الغاز.</p></div>
-      <div class="part-card"><span class="num">2</span><h4>أغطية الشعلات</h4><span class="en">Burner Caps</span><ul><li>مكانه: فوق الشعلة</li><li>وظيفته: توزيع اللهب بشكل متساوٍ</li></ul><p><strong>أعراض تلفها:</strong> لهب غير منتظم، انسداد. <strong>احتمالات أخرى:</strong> تراكم دهون، تلف الشعلة نفسها.</p></div>
-      <div class="part-card"><span class="num">3</span><h4>حوامل الأواني</h4><span class="en">Pan Supports</span><ul><li>مكانه: فوق الشعلات</li><li>وظيفته: حمل الأواني</li></ul><p><strong>أعراض تلفها:</strong> عدم استقرار الأواني. <strong>احتمالات أخرى:</strong> كسر أو انحناء.</p></div>
-      <div class="part-card"><span class="num">4</span><h4>مفاتيح التحكم</h4><span class="en">Control Knobs</span><ul><li>مكانه: مقدمة البوتاجاز</li><li>وظيفته: التحكم في تدفق الغاز والإشعال</li></ul><p><strong>أعراض تلفها:</strong> مفتاح لا يستجيب، صعوبة في اللف. <strong>احتمالات أخرى:</strong> مشكلة في الصمام، تلف الإشعال.</p></div>
-      <div class="part-card"><span class="num">5</span><h4>منظومة الإشعال</h4><span class="en">Ignition System</span><ul><li>مكانه: قرب الشعلات</li><li>وظيفته: إشعال الغاز</li></ul><p><strong>أعراض تلفها:</strong> الإشعال لا يعمل، شرارة ضعيفة. <strong>احتمالات أخرى:</strong> تلف البطارية، مشكلة في الأسلاك.</p></div>
-      <div class="part-card"><span class="num">6</span><h4>باب الفرن</h4><span class="en">Oven Door</span><ul><li>مكانه: مقدمة الفرن</li><li>وظيفته: إغلاق الفرن للحفاظ على الحرارة</li></ul><p><strong>أعراض تلفه:</strong> لا يغلق جيدًا، تسرب حرارة. <strong>احتمالات أخرى:</strong> تلف المفصلات، تلف الجوان.</p></div>
-      <div class="part-card"><span class="num">7</span><h4>زجاج الباب</h4><span class="en">Door Glass</span><ul><li>مكانه: باب الفرن</li><li>وظيفته: رؤية الطعام وعزل الحرارة</li></ul><p><strong>أعراض تلفه:</strong> كسر، تشقق. <strong>احتمالات أخرى:</strong> مشكلة في العزل.</p></div>
-      <div class="part-card"><span class="num">8</span><h4>المفصلات</h4><span class="en">Hinges</span><ul><li>مكانه: جانبي باب الفرن</li><li>وظيفته: فتح وغلق الباب بسلاسة</li></ul><p><strong>أعراض تلفها:</strong> الباب مرتخي، لا يغلق. <strong>احتمالات أخرى:</strong> تلف الجوان، عدم استواء الباب.</p></div>
-      <div class="part-card"><span class="num">9</span><h4>الرفوف والصواني</h4><span class="en">Racks & Trays</span><ul><li>مكانه: داخل الفرن</li><li>وظيفته: حمل الطعام</li></ul><p><strong>أعراض تلفها:</strong> صدأ، انحناء. <strong>احتمالات أخرى:</strong> تراكم دهون.</p></div>
-      <div class="part-card"><span class="num">10</span><h4>جوان الباب (إن وجد)</h4><span class="en">Door Gasket</span><ul><li>مكانه: محيط باب الفرن</li><li>وظيفته: منع تسرب الحرارة</li></ul><p><strong>أعراض تلفه:</strong> تسرب حرارة، ضعف تسوية. <strong>احتمالات أخرى:</strong> تلف المفصلات، عدم استواء الباب.</p></div>
-    </div>
-
-    <!-- تحذير السلامة -->
-    <div class="warn-box">
-      <h4>⚠️ تعليمات السلامة المهمة</h4>
-      <p>لا تحاول فك مواسير الغاز أو تجاوز وسائل الأمان أو تعديل صمامات الغاز بنفسك. أي إصلاح في منظومة الغاز يجب أن يقوم به فني مؤهل. إذا اشتممت رائحة غاز، توقف عن استخدام الجهاز فورًا، وابتعد عن مصادر الاشتعال، واتبع إرشادات الطوارئ المحلية، واطلب مساعدة مختصة. لا تقدم تعليمات كهربائية خطرة.</p>
-    </div>
-
-    <h2 class="section-title">أعطال البوتاجازات الشائعة</h2>
-    <div class="faults-grid">
-      <div class="fault-card"><h4>🔥 الشعلة لا تعمل</h4><p>احتمالات: انسداد فتحات الشعلة، مشكلة في الصمام، انقطاع غاز. الفحص: تنظيف الشعلة، فحص الصمام.</p></div>
-      <div class="fault-card"><h4>⚡ الإشعال لا يعمل</h4><p>احتمالات: تلف البطارية، تلف الإشعال، مشكلة في الأسلاك. الفحص: تغيير البطارية، فحص الدائرة.</p></div>
-      <div class="fault-card"><h4>💨 الشعلة تنطفئ</h4><p>احتمالات: ضعف تدفق الغاز، مشكلة في الصمام، تيار هواء. الفحص: فحص الصمام ومصدر الغاز.</p></div>
-      <div class="fault-card"><h4>🌡️ الفرن لا يسخن</h4><p>احتمالات: تلف شعلة الفرن، مشكلة في الثرموستات، انسداد. الفحص: فحص الشعلة والثرموستات.</p></div>
-      <div class="fault-card"><h4>🚪 باب الفرن لا يغلق</h4><p>احتمالات: تلف المفصلات، تلف الجوان، عدم استواء. الفحص: ضبط المفصلات، تغيير الجوان.</p></div>
-      <div class="fault-card"><h4>📉 حرارة الفرن غير مستقرة</h4><p>احتمالات: تلف الثرموستات، تلف الحساس. الفحص: فحص الثرموستات والحساس.</p></div>
-    </div>
-
-    <div class="form-wrap" style="margin-top:40px;">
-      <h3>اطلب صيانة بوتاجاز</h3>
-      <p class="hint">نوع الجهاز محدد مسبقًا: بوتاجاز</p>
-      <form id="maintenanceFormCooker" novalidate>
-        <input type="hidden" name="source" value="صفحة البوتاجازات">
-        <fieldset><legend>👤 بيانات العميل</legend><div class="form-grid">
-          <div class="field"><label>اسم العميل <span class="req">*</span></label><input type="text" name="name" required placeholder="اكتب اسمك"><span class="err">مطلوب</span></div>
-          <div class="field"><label>رقم الموبايل <span class="req">*</span></label><input type="tel" name="phone" required placeholder="01xxxxxxxxx" dir="ltr"><span class="err">رقم غير صحيح</span></div>
-          <div class="field"><label>رقم بديل (اختياري)</label><input type="tel" name="phone2" placeholder="رقم إضافي" dir="ltr"></div>
-        </div></fieldset>
-        <fieldset><legend>🔧 بيانات الجهاز</legend><div class="form-grid">
-          <div class="field"><label>نوع الجهاز</label><input type="text" name="device" value="بوتاجاز" readonly style="background:#eef1f4;"></div>
-          <div class="field"><label>الماركة (اختياري)</label><input type="text" name="brand" placeholder="توشيبا، فريش..."></div>
-          <div class="field"><label>الموديل (اختياري)</label><input type="text" name="model" placeholder="رقم الموديل"></div>
-          <div class="field"><label>حالة الجهاز</label><select name="working"><option value="">غير محدد</option><option>يعمل جزئيًا</option><option>لا يعمل نهائيًا</option><option>يعمل مع مشاكل</option></select></div>
-        </div></fieldset>
-        <fieldset><legend>📝 تفاصيل العطل</legend><div class="form-grid">
-          <div class="field full"><label>وصف العطل <span class="req">*</span></label><textarea name="issue" required placeholder="اشرح المشكلة بالتفصيل"></textarea><span class="err">مطلوب</span></div>
-          <div class="field full"><label>ملاحظات إضافية</label><textarea name="notes" placeholder="أي تفاصيل إضافية"></textarea></div>
-        </div></fieldset>
-        <fieldset><legend>📍 عنوان الزيارة</legend><div class="form-grid">
-          <div class="field"><label>المحافظة <span class="req">*</span></label><input type="text" name="city" required value="الإسكندرية"><span class="err">مطلوب</span></div>
-          <div class="field"><label>المنطقة <span class="req">*</span></label><input type="text" name="area" required placeholder="سيدي بشر"><span class="err">مطلوب</span></div>
-          <div class="field full"><label>الشارع ورقم العقار <span class="req">*</span></label><input type="text" name="street" required placeholder="27 شارع محمد نجيب، عقار 10"><span class="err">مطلوب</span></div>
-          <div class="field"><label>الدور أو علامة مميزة</label><input type="text" name="floor" placeholder="الدور الثالث"></div>
-        </div></fieldset>
-        <fieldset><legend>📅 الموعد</legend><div class="form-grid">
-          <div class="field"><label>التاريخ <span class="req">*</span></label><input type="date" name="date" required><span class="err">مطلوب</span></div>
-          <div class="field"><label>الوقت <span class="req">*</span></label><select name="time" required><option value="">اختار</option><option>صباحًا (9-12)</option><option>ظهرًا (12-3)</option><option>عصرًا (3-6)</option><option>مساءً (6-9)</option></select><span class="err">مطلوب</span></div>
-        </div></fieldset>
-        <div class="form-actions">
-          <button type="button" class="btn btn-wa btn-lg" onclick="submitForm('maintenanceFormCooker')">📱 إرسال عبر واتساب</button>
-          <button type="button" class="btn btn-outline btn-lg" onclick="copyOrder('maintenanceFormCooker')">📋 نسخ التفاصيل</button>
-        </div>
-      </form>
-      <div class="summary-box" id="summaryCooker"><h4>📄 ملخص الطلب</h4><pre id="summaryTextCooker"></pre>
-        <div class="summary-actions"><button type="button" class="btn btn-wa" onclick="openWhatsApp('maintenanceFormCooker')">📱 فتح واتساب</button><button type="button" class="btn btn-outline" onclick="copyOrder('maintenanceFormCooker')">📋 نسخ</button><button type="button" class="btn btn-outline" onclick="closeSummary('summaryCooker')">✏️ تعديل</button></div>
-      </div>
-    </div>
+<!-- ===================== شريط الأذكار ===================== -->
+<section class="dhikr-band" aria-label="أذكار">
+  <div class="container">
+    <div class="dhikr-label">ذكر الله طمأنينة القلب</div>
+    <div class="dhikr-text" id="dhikrText">سبحان الله وبحمده</div>
+    <div class="dhikr-dots" id="dhikrDots"></div>
   </div>
 </section>
 
-<!-- ============================================
-     صفحة اتصل بنا
-     ============================================ -->
-<section id="page-contact" class="page">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a href="#home" onclick="showPage('home');return false;">الرئيسية</a> › اتصل بنا</div>
-      <h1>📞 اتصل بنا</h1>
-      <p>TRUST — رقم واحد في مصر. احنا في خدمتك في أي وقت.</p>
-    </div>
-  </div>
-  <div class="container section">
-    <div style="max-width:720px;margin:0 auto;background:#fff;padding:32px;border-radius:20px;box-shadow:0 6px 24px rgba(20,40,70,.12);">
-      <h2 style="color:var(--navy);margin-bottom:16px;">بيانات التواصل</h2>
-      <p style="margin-bottom:18px;"><strong>العنوان:</strong> الإسكندرية، 27 شارع محمد نجيب، سيدي بشر</p>
-      <p style="margin-bottom:18px;"><strong>رقم الهاتف الأول:</strong> <a href="tel:01156661812" style="direction:ltr;display:inline-block;font-weight:700;font-size:1.2rem;">01156661812</a></p>
-      <p style="margin-bottom:18px;"><strong>رقم الهاتف الثاني:</strong> <a href="tel:01124997077" style="direction:ltr;display:inline-block;font-weight:700;font-size:1.2rem;">01124997077</a></p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
-        <a href="tel:01156661812" class="btn btn-primary btn-lg">📞 اتصل الآن</a>
-        <a href="https://wa.me/201156661812" target="_blank" rel="noopener" class="btn btn-wa btn-lg">📱 واتساب</a>
-        <a href="#orderFormHome" class="btn btn-gold btn-lg" onclick="showPage('home');setTimeout(function(){document.getElementById('orderFormHome').scrollIntoView({behavior:'smooth'});},200);return false;">📝 اطلب صيانة</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ============================================
-     التذييل
-     ============================================ -->
-<footer class="site-footer">
+<!-- ===================== الفوتر ===================== -->
+<footer class="footer" id="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-col">
-        <h4>TRUST</h4>
-        <p>رقم واحد في مصر</p>
-        <p>قبل ما تحتار، كلم TRUST وخد القرار</p>
-        <p style="color:var(--gold);font-weight:700;">لصيانة الأجهزة المنزلية</p>
+      <div>
+        <div class="brand">
+          <div class="brand-mark"><i class="fa-solid fa-store"></i></div>
+          <div class="brand-text"><strong>هايبر اذكر الله</strong><span>حلم العمر</span></div>
+        </div>
+        <p>من الإسكندرية نبدأ، وبإذن الله نطمح للتوسع في محافظات مصر.</p>
+        <div class="footer-note">
+          التسجيل الحالي مبدئي ولا يمثل التزاماً مالياً أو ضماناً للأرباح. المشاركة النهائية تخضع للإجراءات القانونية والعقود المعتمدة.
+        </div>
       </div>
-      <div class="footer-col">
+      <div>
         <h4>روابط سريعة</h4>
-        <a href="#home" onclick="showPage('home');return false;">الرئيسية</a>
-        <a href="#fridge" onclick="showPage('fridge');return false;">صيانة الثلاجات</a>
-        <a href="#washer" onclick="showPage('washer');return false;">صيانة الغسالات</a>
-        <a href="#cooker" onclick="showPage('cooker');return false;">صيانة البوتاجازات</a>
-        <a href="#contact" onclick="showPage('contact');return false;">اتصل بنا</a>
+        <div class="footer-links">
+          <a href="#about">عن المشروع</a>
+          <a href="#phases">خطة التوسع</a>
+          <a href="#share">نموذج المشاركة</a>
+          <a href="#faq">الأسئلة الشائعة</a>
+        </div>
       </div>
-      <div class="footer-col footer-phones">
+      <div>
+        <h4>المزيد</h4>
+        <div class="footer-links">
+          <a href="#register">التسجيل المبدئي</a>
+          <a href="#legal">الشفافية القانونية</a>
+          <a href="#experience">تجربة العميل</a>
+          <a href="#contact">التواصل</a>
+        </div>
+      </div>
+      <div>
         <h4>تواصل معنا</h4>
-        <p>📍 الإسكندرية، 27 شارع محمد نجيب، سيدي بشر</p>
-        <a href="tel:01156661812">📞 01156661812</a>
-        <a href="tel:01124997077">📞 01124997077</a>
+        <div class="footer-contact">
+          <a href="https://wa.me/201224324243" target="_blank" rel="noopener" class="wa"><i class="fa-brands fa-whatsapp"></i> 01224324243</a>
+          <span>صاحب الفكرة: وائل الخطيب</span>
+          <span>الإسكندرية — مصر</span>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2025 TRUST — جميع الحقوق محفوظة. | رقم واحد في مصر
+      <span>© <span id="year"></span> هايبر اذكر الله — حلم العمر. جميع الحقوق محفوظة.</span>
+      <span>صُنع بـ <i class="fa-solid fa-heart heart"></i> لخدمة المشروع</span>
     </div>
   </div>
 </footer>
 
-<!-- أزرار عائمة -->
-<div class="floating-actions">
-  <a href="tel:01156661812" class="float-btn float-call" aria-label="اتصال سريع">📞</a>
-  <a href="https://wa.me/201156661812" target="_blank" rel="noopener" class="float-btn float-wa" aria-label="واتساب">💬</a>
-</div>
-
-<!-- توست -->
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-<!-- ============================================
-     الصوت: الصلاة على النبي ﷺ
-     ملاحظة: بعض المتصفحات تمنع التشغيل التلقائي.
-     ============================================ -->
-<audio id="salahAudio" loop preload="auto" style="display:none;">
-  <!-- يمكن تغيير رابط الصوت من هنا -->
-  <source src="https://www.islamcan.com/audio/adhan/azan1.mp3" type="audio/mpeg">
-</audio>
+<!-- زر واتساب عائم -->
+<a href="https://wa.me/201224324243" target="_blank" rel="noopener" class="wa-float" aria-label="تواصل عبر واتساب"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script>
-/* ============================================
+/* ============================================================
    إعدادات عامة
-   ============================================ */
-var WHATSAPP_NUMBER = "201156661812"; // رقم واتساب المركز (بصيغة دولية بدون +)
-var PHONE_1 = "01156661812";
-var PHONE_2 = "01124997077";
+   ============================================================ */
+const CONFIG = {
+  sharePrice: 20000,              // ← قيمة السهم — عدّلها من هنا فقط
+  whatsappNumber: '201224324243', // ← الصيغة الدولية
+  maxStocks: 20
+};
+const fmt = n => n.toLocaleString('en-US');
 
-/* ============================================
-   التنقل بين الصفحات
-   ============================================ */
-function showPage(pageId){
-  var pages = document.querySelectorAll('.page');
-  for(var i=0;i<pages.length;i++){ pages[i].classList.remove('active'); }
-  var target = document.getElementById('page-' + pageId);
-  if(target){ target.classList.add('active'); }
-  // إغلاق القائمة على الهاتف
-  var nav = document.getElementById('mainNav');
-  if(nav){ nav.classList.remove('open'); }
-  var toggle = document.getElementById('menuToggle');
-  if(toggle){ toggle.setAttribute('aria-expanded','false'); }
-  // تحديث الرابط النشط
-  var links = document.querySelectorAll('[data-nav]');
-  for(var j=0;j<links.length;j++){
-    if(links[j].getAttribute('data-nav') === pageId){ links[j].classList.add('active'); }
-    else{ links[j].classList.remove('active'); }
+/* ============================================================
+   الهيدر: ظل عند التمرير
+   ============================================================ */
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 10);
+}, {passive:true});
+
+/* ============================================================
+   قائمة الموبايل
+   ============================================================ */
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+function openMenu(){ mobileMenu.classList.add('open'); mobileMenu.setAttribute('aria-hidden','false'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+function hideMenu(){ mobileMenu.classList.remove('open'); mobileMenu.setAttribute('aria-hidden','true'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+burger.addEventListener('click', openMenu);
+closeMenu.addEventListener('click', hideMenu);
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', hideMenu));
+document.addEventListener('keydown', e => { if(e.key === 'Escape') hideMenu(); });
+
+/* ============================================================
+   حركات الظهور
+   ============================================================ */
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(el => io.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('in'));
+}
+
+/* ============================================================
+   أمثلة المشاركة (قسم المشاركة المقترحة)
+   ============================================================ */
+const shareExamples = document.getElementById('shareExamples');
+(function buildExamples(){
+  for(let i=1;i<=5;i++){
+    const ex = document.createElement('div');
+    ex.className = 'share-ex';
+    ex.innerHTML = `<div class="n">${i}</div><div class="v">سهم${i>2?'':''} <b>${fmt(i*CONFIG.sharePrice)}</b> جنيه</div>`;
+    shareExamples.appendChild(ex);
   }
-  window.scrollTo({top:0,behavior:'smooth'});
-  // تحديث الهاش
-  if(location.hash !== '#' + pageId){ history.replaceState(null,'','#'+pageId); }
-}
-
-/* ============================================
-   قائمة الهاتف
-   ============================================ */
-document.getElementById('menuToggle').addEventListener('click',function(){
-  var nav = document.getElementById('mainNav');
-  var open = nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', open ? 'true' : 'false');
-});
-
-/* ============================================
-   الأسئلة الشائعة
-   ============================================ */
-function toggleFaq(btn){
-  var item = btn.parentElement;
-  item.classList.toggle('open');
-}
-
-/* ============================================
-   التحقق من رقم الموبايل المصري
-   ============================================ */
-function normalizePhone(phone){
-  if(!phone) return '';
-  // تحويل الأرقام العربية إلى إنجليزية
-  var arabic = '٠١٢٣٤٥٦٧٨٩';
-  var english = '0123456789';
-  var out = '';
-  for(var i=0;i<phone.length;i++){
-    var ch = phone[i];
-    var idx = arabic.indexOf(ch);
-    if(idx > -1){ out += english[idx]; }
-    else{ out += ch; }
-  }
-  // إزالة المسافات والشرطات والأقواس
-  out = out.replace(/[\s\-\(\)\.]/g,'');
-  return out;
-}
-function isValidEgyptianPhone(phone){
-  var p = normalizePhone(phone);
-  // يبدأ بـ 01 ويتكون من 11 رقم
-  return /^01[0-9]{9}$/.test(p);
-}
-
-/* ============================================
-   جمع بيانات النموذج
-   ============================================ */
-function collectFormData(formId){
-  var form = document.getElementById(formId);
-  if(!form) return null;
-  var fd = new FormData(form);
-  var data = {};
-  fd.forEach(function(value,key){
-    if(key === 'photo') return; // لا نرسل الصورة
-    data[key] = value;
-  });
-  // تطبيع رقم الموبايل
-  data.phone = normalizePhone(data.phone);
-  if(data.phone2){ data.phone2 = normalizePhone(data.phone2); }
-  return data;
-}
-
-/* ============================================
-   التحقق من صحة النموذج
-   ============================================ */
-function validateForm(formId){
-  var form = document.getElementById(formId);
-  if(!form) return false;
-  var valid = true;
-  var fields = form.querySelectorAll('input[required], select[required], textarea[required]');
-  // إزالة حالات الخطأ السابقة
-  var allFields = form.querySelectorAll('.field');
-  for(var f=0;f<allFields.length;f++){ allFields[f].classList.remove('invalid'); }
-
-  for(var i=0;i<fields.length;i++){
-    var input = fields[i];
-    var field = input.closest('.field');
-    var value = input.value.trim();
-    if(!value){
-      if(field){ field.classList.add('invalid'); }
-      valid = false;
-      continue;
-    }
-    // تحقق خاص من رقم الموبايل
-    if(input.name === 'phone'){
-      if(!isValidEgyptianPhone(value)){
-        if(field){ field.classList.add('invalid'); }
-        var err = field ? field.querySelector('.err') : null;
-        if(err){ err.textContent = 'رقم الموبايل غير صحيح. لازم يبدأ بـ 01 ويتكون من 11 رقم.'; }
-        valid = false;
-      }
-    }
-    if(input.name === 'phone2' && value){
-      if(!isValidEgyptianPhone(value)){
-        if(field){ field.classList.add('invalid'); }
-        var err2 = field ? field.querySelector('.err') : null;
-        if(err2){ err2.textContent = 'الرقم البديل غير صحيح.'; }
-        valid = false;
-      }
-    }
-  }
-  return valid;
-}
-
-/* ============================================
-   بناء نص رسالة واتساب
-   ============================================ */
-function buildMessage(data){
-  var orderId = 'TR-' + Date.now().toString().slice(-6);
-  var lines = [];
-  lines.push('طلب صيانة جديد — TRUST');
-  lines.push('رقم الطلب: ' + orderId);
-  lines.push('');
-  lines.push('اسم العميل: ' + (data.name || 'غير محدد'));
-  lines.push('رقم موبايل العميل: ' + (data.phone || 'غير محدد'));
-  lines.push('رقم بديل: ' + (data.phone2 || 'غير متوفر'));
-  lines.push('');
-  lines.push('نوع الجهاز: ' + (data.device || 'غير محدد'));
-  lines.push('الماركة: ' + (data.brand || 'غير محددة'));
-  lines.push('الموديل: ' + (data.model || 'غير محدد'));
-  lines.push('وصف العطل: ' + (data.issue || 'غير محدد'));
-  lines.push('حالة الجهاز: ' + (data.working || 'غير محددة'));
-  lines.push('');
-  var address = (data.city || '') + '، ' + (data.area || '') + '، ' + (data.street || '');
-  if(data.floor){ address += '، ' + data.floor; }
-  lines.push('العنوان: ' + address);
-  lines.push('');
-  lines.push('الموعد المطلوب: ' + (data.date || 'غير محدد'));
-  lines.push('الوقت المطلوب: ' + (data.time || 'غير محدد'));
-  lines.push('');
-  lines.push('ملاحظات إضافية: ' + (data.notes || 'لا توجد'));
-  lines.push('');
-  lines.push('مصدر الطلب: ' + (data.source || 'موقع TRUST'));
-  lines.push('');
-  lines.push('تنبيه: الموعد المذكور هو الموعد الذي يفضله العميل، ويحتاج إلى تأكيد المركز.');
-  return lines.join('\n');
-}
-
-/* ============================================
-   عرض ملخص الطلب
-   ============================================ */
-function showSummary(formId){
-  var data = collectFormData(formId);
-  if(!data) return;
-  var msg = buildMessage(data);
-  var suffix = formId.replace('maintenanceForm','');
-  var summaryBox = document.getElementById('summary' + suffix);
-  var summaryText = document.getElementById('summaryText' + suffix);
-  if(summaryBox && summaryText){
-    summaryText.textContent = msg;
-    summaryBox.classList.add('show');
-    summaryBox.scrollIntoView({behavior:'smooth',block:'center'});
-  }
-}
-
-function closeSummary(id){
-  var el = document.getElementById(id);
-  if(el){ el.classList.remove('show'); }
-}
-
-/* ============================================
-   إرسال النموذج (عرض الملخص أولًا)
-   ============================================ */
-function submitForm(formId){
-  if(!validateForm(formId)){
-    showToast('من فضلك اكمل الحقول المطلوبة بشكل صحيح','error');
-    // التمرير لأول خطأ
-    var form = document.getElementById(formId);
-    var firstErr = form.querySelector('.field.invalid');
-    if(firstErr){ firstErr.scrollIntoView({behavior:'smooth',block:'center'}); }
-    return;
-  }
-  showSummary(formId);
-  showToast('راجع ملخص الطلب ثم اضغط فتح واتساب','success');
-}
-
-/* ============================================
-   فتح واتساب
-   ============================================ */
-function openWhatsApp(formId){
-  if(!validateForm(formId)){
-    showToast('من فضلك اكمل الحقول المطلوبة بشكل صحيح','error');
-    return;
-  }
-  var data = collectFormData(formId);
-  var msg = buildMessage(data);
-  var url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
-  window.open(url,'_blank');
-  showToast('تم فتح واتساب برسالة جاهزة. اضغط إرسال داخل واتساب.','success');
-}
-
-/* ============================================
-   نسخ تفاصيل الطلب
-   ============================================ */
-function copyOrder(formId){
-  if(!validateForm(formId)){
-    showToast('من فضلك اكمل الحقول المطلوبة أولًا','error');
-    return;
-  }
-  var data = collectFormData(formId);
-  var msg = buildMessage(data);
-  if(navigator.clipboard && navigator.clipboard.writeText){
-    navigator.clipboard.writeText(msg).then(function(){
-      showToast('✅ تم نسخ تفاصيل الطلب بنجاح','success');
-    }).catch(function(){
-      fallbackCopy(msg);
-    });
-  } else {
-    fallbackCopy(msg);
-  }
-}
-function fallbackCopy(text){
-  var ta = document.createElement('textarea');
-  ta.value = text;
-  ta.style.position = 'fixed';
-  ta.style.opacity = '0';
-  document.body.appendChild(ta);
-  ta.select();
-  try{
-    document.execCommand('copy');
-    showToast('✅ تم نسخ تفاصيل الطلب بنجاح','success');
-  }catch(e){
-    showToast('تعذر النسخ. انسخ النص يدويًا.','error');
-  }
-  document.body.removeChild(ta);
-}
-
-/* ============================================
-   توست
-   ============================================ */
-var toastTimer = null;
-function showToast(msg,type){
-  var t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast show ' + (type || '');
-  if(toastTimer){ clearTimeout(toastTimer); }
-  toastTimer = setTimeout(function(){ t.classList.remove('show'); },3500);
-}
-
-/* ============================================
-   الصوت: الصلاة على النبي ﷺ
-   ============================================ */
-(function initSalahAudio(){
-  var audio = document.getElementById('salahAudio');
-  if(!audio) return;
-  audio.volume = 0.25;
-
-  // محاولة التشغيل التلقائي
-  function tryPlay(){
-    var p = audio.play();
-    if(p && p.catch){
-      p.catch(function(){
-        // المتصفح منع التشغيل التلقائي.
-        // نحاول مرة أخرى عند أول تفاعل من المستخدم.
-        var onFirst = function(){
-          audio.play().catch(function(){});
-          document.removeEventListener('click',onFirst);
-          document.removeEventListener('touchstart',onFirst);
-          document.removeEventListener('keydown',onFirst);
-        };
-        document.addEventListener('click',onFirst,{once:true});
-        document.addEventListener('touchstart',onFirst,{once:true});
-        document.addEventListener('keydown',onFirst,{once:true});
-      });
-    }
-  }
-
-  // تشغيل عند تحميل الصفحة
-  if(document.readyState === 'complete' || document.readyState === 'interactive'){
-    setTimeout(tryPlay,300);
-  } else {
-    document.addEventListener('DOMContentLoaded',function(){ setTimeout(tryPlay,300); });
-  }
-
-  // إيقاف الصوت عند مغادرة الصفحة
-  window.addEventListener('beforeunload',function(){ audio.pause(); });
-  window.addEventListener('pagehide',function(){ audio.pause(); });
 })();
 
-/* ============================================
-   التنقل عند تحميل الصفحة (حسب الهاش)
-   ============================================ */
-document.addEventListener('DOMContentLoaded',function(){
-  var hash = location.hash.replace('#','');
-  var valid = ['home','fridge','washer','cooker','contact'];
-  if(valid.indexOf(hash) > -1){ showPage(hash); }
-  else{ showPage('home'); }
+/* ============================================================
+   اختيار الأسهم + حساب الإجمالي
+   ============================================================ */
+const stockPicker = document.getElementById('stockPicker');
+const totalValue = document.getElementById('totalValue');
+const totalLabel = document.getElementById('totalLabel');
+const errStocks = document.getElementById('errStocks');
+let selectedStocks = 1;
 
-  // تحديث الرابط النشط
-  window.addEventListener('hashchange',function(){
-    var h = location.hash.replace('#','');
-    if(valid.indexOf(h) > -1){ showPage(h); }
+(function buildStockPicker(){
+  for(let i=1;i<=CONFIG.maxStocks;i++){
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'stock-opt' + (i===1?' active':'');
+    b.dataset.stocks = i;
+    b.innerHTML = `<span class="num">${i}</span><span class="lbl">سهم</span>`;
+    b.addEventListener('click', () => {
+      selectedStocks = i;
+      document.querySelectorAll('.stock-opt').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      updateTotal();
+      errStocks.classList.remove('show');
+    });
+    stockPicker.appendChild(b);
+  }
+})();
+
+function updateTotal(){
+  const total = selectedStocks * CONFIG.sharePrice;
+  totalValue.textContent = fmt(total);
+  totalLabel.textContent = fmt(total) + ' جنيه';
+}
+updateTotal();
+
+/* ============================================================
+   خريطة المناطق
+   ============================================================ */
+const regionDetail = document.getElementById('regionDetail');
+document.getElementById('regionChips').addEventListener('click', (e) => {
+  const chip = e.target.closest('.chip');
+  if(!chip) return;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  const region = chip.dataset.region;
+  if(region === 'مناطق أخرى'){
+    regionDetail.innerHTML = '<i class="fa-solid fa-circle-info"></i> مناطق أخرى سيتم تحديدها بعد دراسة الجدوى، وفق معايير السوق والموقع.';
+  } else {
+    regionDetail.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${region}: منطقة مقترحة لدراسة افتتاح فرع، وليست موقعاً مؤكداً. سيتم تحديد التفاصيل وفق دراسات الجدوى.`;
+  }
+});
+
+/* ============================================================
+   الأسئلة الشائعة
+   ============================================================ */
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(x => { x.classList.remove('open'); x.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+    if(!isOpen){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  });
+});
+
+/* ============================================================
+   المعرض + Lightbox
+   ============================================================ */
+const lightbox = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+document.getElementById('gallery').addEventListener('click', (e) => {
+  const fig = e.target.closest('figure');
+  if(!fig) return;
+  const src = fig.dataset.src || fig.querySelector('img').src;
+  lbImg.src = src;
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+});
+function closeLb(){
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden','true');
+  lbImg.src = '';
+  document.body.style.overflow = '';
+}
+document.getElementById('lbClose').addEventListener('click', closeLb);
+lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLb(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLb(); });
+
+/* ============================================================
+   نموذج التسجيل
+   ============================================================ */
+const form = document.getElementById('regForm');
+const fullName = document.getElementById('fullName');
+const phone1 = document.getElementById('phone1');
+const phone2 = document.getElementById('phone2');
+const consent = document.getElementById('consent');
+const consentLabel = document.getElementById('consentLabel');
+const successBox = document.getElementById('successBox');
+const copyText = document.getElementById('copyText');
+const copyBtn = document.getElementById('copyBtn');
+const copyFeedback = document.getElementById('copyFeedback');
+const reopenWa = document.getElementById('reopenWa');
+
+const egPhoneRegex = /^01[0125][0-9]{8}$/;
+
+function showErr(el, show){ el.classList.toggle('show', show); }
+function markErr(input, err){ input.classList.toggle('error', err); }
+
+let lastWaUrl = '';
+
+/* التحقق الحي */
+fullName.addEventListener('input', () => {
+  if(fullName.value.trim().length >= 3){ markErr(fullName,false); showErr(document.getElementById('errName'),false); }
+});
+phone1.addEventListener('input', () => {
+  if(egPhoneRegex.test(phone1.value.trim())){ markErr(phone1,false); showErr(document.getElementById('errPhone1'),false); }
+});
+phone2.addEventListener('input', () => {
+  const v = phone2.value.trim();
+  if(v === '' || egPhoneRegex.test(v)){ markErr(phone2,false); showErr(document.getElementById('errPhone2'),false); }
+});
+consent.addEventListener('change', () => {
+  if(consent.checked){ consentLabel.classList.remove('error'); showErr(document.getElementById('errConsent'),false); }
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  // الاسم
+  if(fullName.value.trim().length < 3){
+    markErr(fullName,true); showErr(document.getElementById('errName'),true); valid = false;
+  } else { markErr(fullName,false); showErr(document.getElementById('errName'),false); }
+
+  // الموبايل الأساسي
+  if(!egPhoneRegex.test(phone1.value.trim())){
+    markErr(phone1,true); showErr(document.getElementById('errPhone1'),true); valid = false;
+  } else { markErr(phone1,false); showErr(document.getElementById('errPhone1'),false); }
+
+  // الموبايل الثاني (اختياري)
+  const p2 = phone2.value.trim();
+  if(p2 !== '' && !egPhoneRegex.test(p2)){
+    markErr(phone2,true); showErr(document.getElementById('errPhone2'),true); valid = false;
+  } else { markErr(phone2,false); showErr(document.getElementById('errPhone2'),false); }
+
+  // عدد الأسهم
+  if(!selectedStocks || selectedStocks < 1){
+    showErr(errStocks,true); valid = false;
+  } else { showErr(errStocks,false); }
+
+  // الموافقة
+  if(!consent.checked){
+    consentLabel.classList.add('error'); showErr(document.getElementById('errConsent'),true); valid = false;
+  } else { consentLabel.classList.remove('error'); showErr(document.getElementById('errConsent'),false); }
+
+  if(!valid){
+    // تمرير لأول خطأ
+    const firstErr = document.querySelector('.field input.error, .consent.error');
+    if(firstErr) firstErr.scrollIntoView({behavior:'smooth', block:'center'});
+    return;
+  }
+
+  // تجهيز رسالة واتساب
+  const name = fullName.value.trim();
+  const p1 = phone1.value.trim();
+  const p2Final = p2 === '' ? 'غير متوفر' : p2;
+  const total = selectedStocks * CONFIG.sharePrice;
+
+  const message =
+`طلب تسجيل مبدئي — مشروع هايبر اذكر الله
+
+الاسم بالكامل: ${name}
+
+رقم الموبايل الأساسي: ${p1}
+
+رقم موبايل آخر: ${p2Final}
+
+عدد الأسهم المطلوبة: ${selectedStocks}
+
+قيمة السهم المقترحة: ${fmt(CONFIG.sharePrice)} جنيه
+
+إجمالي المساهمة المقترحة: ${fmt(total)} جنيه
+
+حالة الطلب: تسجيل مبدئي — لم يتم دفع أي أموال.`;
+
+  lastWaUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  // تعبئة منطقة النسخ
+  copyText.value = message;
+
+  // إخفاء النموذج وإظهار رسالة النجاح
+  form.style.display = 'none';
+  successBox.classList.add('show');
+  successBox.scrollIntoView({behavior:'smooth', block:'start'});
+
+  // فتح واتساب في نافذة جديدة
+  window.open(lastWaUrl, '_blank', 'noopener');
+});
+
+/* نسخ الرسالة */
+copyBtn.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(copyText.value);
+    copyFeedback.classList.add('show');
+    setTimeout(() => copyFeedback.classList.remove('show'), 2600);
+  } catch(err){
+    copyText.select();
+    try { document.execCommand('copy'); copyFeedback.classList.add('show'); setTimeout(()=>copyFeedback.classList.remove('show'),2600); }
+    catch(e){ alert('تعذر النسخ التلقائي. يمكنك تحديد النص ونسخه يدوياً.'); }
+  }
+});
+
+/* إعادة فتح واتساب */
+reopenWa.addEventListener('click', () => { if(lastWaUrl) window.open(lastWaUrl, '_blank', 'noopener'); });
+
+/* ============================================================
+   الأذكار المتغيرة
+   ============================================================ */
+const adhkar = [
+  'سبحان الله وبحمده',
+  'سبحان الله العظيم',
+  'أستغفر الله العظيم وأتوب إليه',
+  'اللهم صلِّ وسلم على نبينا محمد'
+];
+const dhikrText = document.getElementById('dhikrText');
+const dhikrDots = document.getElementById('dhikrDots');
+let dhikrIndex = 0;
+adhkar.forEach((_, i) => {
+  const s = document.createElement('span');
+  if(i === 0) s.classList.add('active');
+  dhikrDots.appendChild(s);
+});
+function rotateDhikr(){
+  dhikrText.style.opacity = '0';
+  setTimeout(() => {
+    dhikrIndex = (dhikrIndex + 1) % adhkar.length;
+    dhikrText.textContent = adhkar[dhikrIndex];
+    dhikrText.style.opacity = '1';
+    dhikrDots.querySelectorAll('span').forEach((s,i) => s.classList.toggle('active', i === dhikrIndex));
+  }, 600);
+}
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(rotateDhikr, 5500);
+}
+
+/* ============================================================
+   السنة في الفوتر
+   ============================================================ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============================================================
+   معالجة الصور المكسورة (بديل أنيق)
+   ============================================================ */
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('error', function(){
+    if(this.dataset.fallbackApplied) return;
+    this.dataset.fallbackApplied = '1';
+    const parent = this.parentElement;
+    const label = this.alt || 'صورة المشروع';
+    const ph = document.createElement('div');
+    ph.style.cssText = 'display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;height:100%;min-height:120px;background:linear-gradient(135deg,#0f4d3a,#14624a);color:#f0d27a;font-size:14px;font-weight:700;text-align:center;padding:16px;border-radius:12px';
+    ph.innerHTML = `<i class="fa-solid fa-image" style="font-size:26px;color:#f0d27a"></i><span>${label}</span><span style="font-size:11px;color:#c9ddd4;font-weight:600">مساحة بديلة قابلة للتعديل</span>`;
+    this.style.display = 'none';
+    parent.appendChild(ph);
   });
 });
 </script>
-
 </body>
 </html>
